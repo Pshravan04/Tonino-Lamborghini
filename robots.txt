@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /sendmail.php
+Disallow: /debug-log.txt
+Disallow: /PHPMailer/
+Disallow: /thankyou.html
+
+Sitemap: https://toninolamborghiniresidencesbandra.com/sitemap.xml

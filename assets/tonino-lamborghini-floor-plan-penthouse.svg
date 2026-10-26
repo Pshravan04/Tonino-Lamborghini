@@ -1,0 +1,174 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bpBgP" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#08142B"/>
+      <stop offset="100%" stop-color="#0B1B3D"/>
+    </linearGradient>
+    <linearGradient id="goldLgP" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F7D070"/>
+      <stop offset="50%" stop-color="#C5A059"/>
+      <stop offset="100%" stop-color="#9C772E"/>
+    </linearGradient>
+    <linearGradient id="poolGradP" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06B6D4"/>
+      <stop offset="100%" stop-color="#0284C7"/>
+    </linearGradient>
+    <pattern id="gridP" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="rgba(197, 160, 89, 0.08)" stroke-width="0.75"/>
+    </pattern>
+  </defs>
+
+  <rect width="800" height="800" fill="url(#bpBgP)"/>
+  <rect width="800" height="800" fill="url(#gridP)"/>
+
+  <rect x="20" y="20" width="760" height="760" fill="none" stroke="url(#goldLgP)" stroke-width="2" opacity="0.7"/>
+  <rect x="28" y="28" width="744" height="744" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+
+  <!-- Title Block Header -->
+  <g transform="translate(45, 45)">
+    <rect x="0" y="0" width="710" height="65" rx="8" fill="rgba(11,27,61,0.85)" stroke="url(#goldLgP)" stroke-width="1"/>
+    
+    <path d="M 28 14 C 42 14, 46 17, 47 25 C 48 38, 40 52, 28 62 C 16 52, 8 38, 9 25 C 10 17, 14 14, 28 14 Z" fill="#C5001E" stroke="#F7D070" stroke-width="1.5"/>
+    <polygon points="28,24 33,36 28,33 23,36" fill="#FFFFFF"/>
+    
+    <text x="60" y="32" font-family="'Cinzel', serif" font-size="14" font-weight="700" fill="#FFFFFF">Tonino Lamborghini Residences</text>
+    <text x="60" y="48" font-family="'Montserrat', sans-serif" font-size="10" font-weight="600" fill="#F7D070" letter-spacing="3">BANDRA RECLAMATION, MUMBAI</text>
+
+    <!-- Typology Tag -->
+    <rect x="470" y="14" width="225" height="36" rx="6" fill="#C5001E"/>
+    <text x="582" y="32" font-family="'Montserrat', sans-serif" font-size="11" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">PRESIDENTIAL PENTHOUSE</text>
+    <text x="582" y="44" font-family="'Montserrat', sans-serif" font-size="9" font-weight="600" fill="#FDE047" text-anchor="middle">CUSTOM SKY VILLA &bull; DUPLEX</text>
+  </g>
+
+  <!-- Sky Deck with Private Infinity Plunge Pool (Top) -->
+  <g transform="translate(60, 130)">
+    <rect x="0" y="0" width="680" height="85" rx="8" fill="rgba(56, 189, 248, 0.12)" stroke="#38BDF8" stroke-width="1.5"/>
+    
+    <!-- Private Plunge Pool -->
+    <rect x="440" y="12" width="220" height="60" rx="8" fill="url(#poolGradP)" stroke="#FFFFFF" stroke-width="1.5"/>
+    <text x="550" y="45" font-family="'Montserrat', sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">
+      PRIVATE SKY POOL &amp; JACUZZI
+    </text>
+
+    <text x="210" y="40" font-family="'Montserrat', sans-serif" font-size="12" font-weight="700" fill="#38BDF8" text-anchor="middle" letter-spacing="2">
+      ▲ PRIVATE ROOFTOP SKY TERRACE (42'0" x 10'0") ▲
+    </text>
+    <text x="210" y="58" font-family="'Montserrat', sans-serif" font-size="9" font-weight="600" fill="#BAE6FD" text-anchor="middle">
+      SUNSET CABANA &bull; OUTDOOR BBQ &bull; 360° SEA LINK PANORAMA
+    </text>
+  </g>
+
+  <!-- Double Height Grand Living Salon -->
+  <g transform="translate(60, 225)">
+    <rect x="0" y="0" width="420" height="235" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.6)" stroke-width="2"/>
+    <text x="210" y="105" font-family="'Montserrat', sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle" letter-spacing="2">
+      DOUBLE-HEIGHT GRAND SALON
+    </text>
+    <text x="210" y="130" font-family="'Montserrat', sans-serif" font-size="12" font-weight="600" fill="#F7D070" text-anchor="middle">
+      36'0" x 22'0" (24 Ft Ceiling)
+    </text>
+    <text x="210" y="152" font-family="'Montserrat', sans-serif" font-size="9" font-weight="500" fill="#94A3B8" text-anchor="middle">
+      Internal Glass Elevator &bull; Helical Floating Staircase
+    </text>
+
+    <!-- Spiral Staircase Graphic -->
+    <circle cx="65" cy="55" r="32" fill="none" stroke="url(#goldLgP)" stroke-width="1.5" stroke-dasharray="4 2"/>
+    <circle cx="65" cy="55" r="12" fill="url(#goldLgP)" opacity="0.4"/>
+    <text x="65" y="58" font-family="'Montserrat', sans-serif" font-size="7" font-weight="700" fill="#FFFFFF" text-anchor="middle">STAIRS</text>
+  </g>
+
+  <!-- Sky Villa Master Wing (Top Right) -->
+  <g transform="translate(490, 225)">
+    <rect x="0" y="0" width="250" height="235" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.6)" stroke-width="2"/>
+    <text x="125" y="85" font-family="'Montserrat', sans-serif" font-size="12.5" font-weight="700" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">
+      MASTER BEDROOM WING
+    </text>
+    <text x="125" y="108" font-family="'Montserrat', sans-serif" font-size="11.5" font-weight="600" fill="#F7D070" text-anchor="middle">
+      24'0" x 16'6"
+    </text>
+    <rect x="15" y="140" width="105" height="80" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+    <text x="67" y="175" font-family="'Montserrat', sans-serif" font-size="8.5" font-weight="600" fill="#E2E8F0" text-anchor="middle">
+      DRESSING SUITE
+    </text>
+    <rect x="130" y="140" width="105" height="80" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+    <text x="182" y="170" font-family="'Montserrat', sans-serif" font-size="8.5" font-weight="600" fill="#E2E8F0" text-anchor="middle">
+      SPA BATH
+    </text>
+    <text x="182" y="185" font-family="'Montserrat', sans-serif" font-size="7.5" font-weight="500" fill="#94A3B8" text-anchor="middle">
+      Sea View Jacuzzi
+    </text>
+  </g>
+
+  <!-- Lower Level Guest Suites & Private Bar -->
+  <g transform="translate(60, 470)">
+    <rect x="0" y="0" width="220" height="185" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.6)" stroke-width="2"/>
+    <text x="110" y="80" font-family="'Montserrat', sans-serif" font-size="11.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">
+      GUEST VILLA SUITE
+    </text>
+    <text x="110" y="102" font-family="'Montserrat', sans-serif" font-size="11" font-weight="600" fill="#F7D070" text-anchor="middle">
+      16'0" x 14'0"
+    </text>
+    <rect x="15" y="125" width="190" height="45" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+    <text x="110" y="152" font-family="'Montserrat', sans-serif" font-size="8.5" font-weight="600" fill="#E2E8F0" text-anchor="middle">
+      EN-SUITE LUXURY BATH
+    </text>
+  </g>
+
+  <g transform="translate(290, 470)">
+    <rect x="0" y="0" width="215" height="185" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.6)" stroke-width="2"/>
+    <text x="107" y="80" font-family="'Montserrat', sans-serif" font-size="11.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">
+      PRIVATE CIGAR &amp; WINE BAR
+    </text>
+    <text x="107" y="102" font-family="'Montserrat', sans-serif" font-size="11" font-weight="600" fill="#F7D070" text-anchor="middle">
+      18'0" x 12'0"
+    </text>
+    <rect x="15" y="125" width="185" height="45" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+    <text x="107" y="152" font-family="'Montserrat', sans-serif" font-size="8.5" font-weight="600" fill="#E2E8F0" text-anchor="middle">
+      TEMPERATURE-CONTROLLED CELLAR
+    </text>
+  </g>
+
+  <!-- Private Penthouse Foyer & Direct Lift -->
+  <g transform="translate(515, 470)">
+    <rect x="0" y="0" width="225" height="185" fill="rgba(197, 160, 89, 0.12)" stroke="url(#goldLgP)" stroke-width="1.5"/>
+    <text x="112" y="85" font-family="'Montserrat', sans-serif" font-size="12" font-weight="700" fill="#F7D070" text-anchor="middle">
+      DEDICATED PENTHOUSE FOYER
+    </text>
+    <text x="112" y="108" font-family="'Montserrat', sans-serif" font-size="10" font-weight="600" fill="#FFFFFF" text-anchor="middle">
+      EXCLUSIVE DIRECT-ACCESS ELEVATOR
+    </text>
+    <text x="112" y="130" font-family="'Montserrat', sans-serif" font-size="8.5" font-weight="500" fill="#94A3B8" text-anchor="middle">
+      Private Arrival Lobby &bull; Retinal Scan
+    </text>
+  </g>
+
+  <!-- Footer Specs -->
+  <g transform="translate(45, 675)">
+    <rect x="0" y="0" width="710" height="70" rx="8" fill="#08142B" stroke="url(#goldLgP)" stroke-width="1"/>
+    
+    <g transform="translate(25, 20)">
+      <text x="0" y="14" font-family="'Montserrat', sans-serif" font-size="10" font-weight="700" fill="#94A3B8">TYPOLOGY</text>
+      <text x="0" y="32" font-family="'Montserrat', sans-serif" font-size="12" font-weight="800" fill="#FFFFFF">PRESIDENTIAL SKY VILLA</text>
+    </g>
+
+    <g transform="translate(205, 20)">
+      <text x="0" y="14" font-family="'Montserrat', sans-serif" font-size="10" font-weight="700" fill="#94A3B8">CARPET AREA</text>
+      <text x="0" y="32" font-family="'Montserrat', sans-serif" font-size="12" font-weight="800" fill="#F7D070">CUSTOM BESPOKE</text>
+    </g>
+
+    <g transform="translate(365, 20)">
+      <text x="0" y="14" font-family="'Montserrat', sans-serif" font-size="10" font-weight="700" fill="#94A3B8">SKY TERRACE</text>
+      <text x="0" y="32" font-family="'Montserrat', sans-serif" font-size="12" font-weight="800" fill="#FFFFFF">PRIVATE POOL</text>
+    </g>
+
+    <g transform="translate(500, 20)">
+      <text x="0" y="14" font-family="'Montserrat', sans-serif" font-size="10" font-weight="700" fill="#94A3B8">CEILING HEIGHT</text>
+      <text x="0" y="32" font-family="'Montserrat', sans-serif" font-size="12" font-weight="800" fill="#FFFFFF">24 FT DOUBLE-HEIGHT</text>
+    </g>
+
+    <g transform="translate(630, 20)">
+      <text x="0" y="14" font-family="'Montserrat', sans-serif" font-size="10" font-weight="700" fill="#94A3B8">STATUS</text>
+      <text x="0" y="32" font-family="'Montserrat', sans-serif" font-size="11" font-weight="800" fill="#F7D070">BY INVITATION</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="100%" height="100%">
+  <defs>
+    <linearGradient id="spaBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070E1A"/>
+      <stop offset="50%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#0A1120"/>
+    </linearGradient>
+    <linearGradient id="spaWater" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0EA5E9"/>
+      <stop offset="50%" stop-color="#06B6D4"/>
+      <stop offset="100%" stop-color="#0284C7"/>
+    </linearGradient>
+    <linearGradient id="warmAmber" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE68A"/>
+      <stop offset="50%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#B45309"/>
+    </linearGradient>
+    <linearGradient id="goldS" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F7D070"/>
+      <stop offset="100%" stop-color="#C5A059"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#spaBg)"/>
+
+  <!-- Architectural Wall Panels (Calacatta Marble & Fluted Wood) -->
+  <g opacity="0.3">
+    <line x1="200" y1="0" x2="200" y2="900" stroke="#C5A059" stroke-width="1"/>
+    <line x1="400" y1="0" x2="400" y2="900" stroke="#C5A059" stroke-width="1"/>
+    <line x1="600" y1="0" x2="600" y2="900" stroke="#C5A059" stroke-width="1"/>
+    <line x1="800" y1="0" x2="800" y2="900" stroke="#C5A059" stroke-width="1"/>
+    <line x1="1000" y1="0" x2="1000" y2="900" stroke="#C5A059" stroke-width="1"/>
+    <line x1="1200" y1="0" x2="1200" y2="900" stroke="#C5A059" stroke-width="1"/>
+    <line x1="1400" y1="0" x2="1400" y2="900" stroke="#C5A059" stroke-width="1"/>
+  </g>
+
+  <!-- Warm Backlit Halo Lighting -->
+  <ellipse cx="800" cy="380" rx="450" ry="250" fill="url(#warmAmber)" opacity="0.25" filter="blur(40px)"/>
+
+  <!-- Heated Vitality Hydrotherapy Pool -->
+  <g transform="translate(300, 320)">
+    <!-- Pool Rim -->
+    <rect x="0" y="0" width="1000" height="340" rx="30" fill="#0B132B" stroke="url(#goldS)" stroke-width="3"/>
+    
+    <!-- Water Body -->
+    <rect x="25" y="25" width="950" height="290" rx="20" fill="url(#spaWater)" opacity="0.85"/>
+    
+    <!-- Ripples & Bubbles -->
+    <ellipse cx="500" cy="170" rx="350" ry="90" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="2"/>
+    <ellipse cx="500" cy="170" rx="220" ry="55" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="2"/>
+    <ellipse cx="500" cy="170" rx="100" ry="25" fill="none" stroke="rgba(255,255,255,0.6)" stroke-width="2"/>
+    <circle cx="500" cy="170" r="14" fill="#FFFFFF" opacity="0.8"/>
+  </g>
+
+  <!-- Left: Finnish Cedarwood Sauna -->
+  <g transform="translate(80, 220)">
+    <rect x="0" y="0" width="180" height="420" rx="16" fill="rgba(180, 83, 9, 0.2)" stroke="#F59E0B" stroke-width="2"/>
+    <text x="90" y="200" font-family="'Montserrat', sans-serif" font-size="14" font-weight="700" fill="#FDE68A" text-anchor="middle" letter-spacing="2">
+      CEDARWOOD
+    </text>
+    <text x="90" y="225" font-family="'Montserrat', sans-serif" font-size="14" font-weight="700" fill="#FDE68A" text-anchor="middle" letter-spacing="2">
+      SAUNA
+    </text>
+    <text x="90" y="260" font-family="'Montserrat', sans-serif" font-size="10" font-weight="500" fill="#FCD34D" text-anchor="middle">
+      Nordic Dry Heat
+    </text>
+  </g>
+
+  <!-- Right: Aromatherapy Steam Sanctuary -->
+  <g transform="translate(1340, 220)">
+    <rect x="0" y="0" width="180" height="420" rx="16" fill="rgba(6, 182, 212, 0.2)" stroke="#06B6D4" stroke-width="2"/>
+    <text x="90" y="200" font-family="'Montserrat', sans-serif" font-size="14" font-weight="700" fill="#A5F3FC" text-anchor="middle" letter-spacing="2">
+      TURKISH
+    </text>
+    <text x="90" y="225" font-family="'Montserrat', sans-serif" font-size="14" font-weight="700" fill="#A5F3FC" text-anchor="middle" letter-spacing="2">
+      HAMMAM
+    </text>
+    <text x="90" y="260" font-family="'Montserrat', sans-serif" font-size="10" font-weight="500" fill="#67E8F9" text-anchor="middle">
+      Eucalyptus Steam
+    </text>
+  </g>
+
+  <!-- Heated Marble Loungers Silhouette at Bottom -->
+  <g fill="rgba(255,255,255,0.06)" stroke="url(#goldS)" stroke-width="1.5">
+    <rect x="360" y="690" width="220" height="70" rx="12"/>
+    <rect x="690" y="690" width="220" height="70" rx="12"/>
+    <rect x="1020" y="690" width="220" height="70" rx="12"/>
+  </g>
+  <text x="470" y="732" font-family="'Montserrat', sans-serif" font-size="11" font-weight="600" fill="#E2E8F0" text-anchor="middle">Heated Lounger</text>
+  <text x="800" y="732" font-family="'Montserrat', sans-serif" font-size="11" font-weight="600" fill="#E2E8F0" text-anchor="middle">Heated Lounger</text>
+  <text x="1130" y="732" font-family="'Montserrat', sans-serif" font-size="11" font-weight="600" fill="#E2E8F0" text-anchor="middle">Heated Lounger</text>
+
+  <!-- Top Banner Title -->
+  <g transform="translate(450, 70)">
+    <rect x="0" y="0" width="700" height="85" rx="16" fill="rgba(11, 27, 61, 0.9)" stroke="url(#goldS)" stroke-width="2"/>
+    <text x="350" y="40" font-family="'Montserrat', sans-serif" font-size="20" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="3">
+      ITALIAN SPA &amp; WELLNESS SANCTUARY
+    </text>
+    <text x="350" y="66" font-family="'Montserrat', sans-serif" font-size="12" font-weight="600" fill="#F7D070" text-anchor="middle" letter-spacing="1.5">
+      Vitality Hydrotherapy Pool &bull; Steam &bull; Sauna &bull; Private Therapy
+    </text>
+  </g>
+</svg>

@@ -1,0 +1,1766 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+
+    <!-- Primary SEO Meta Tags -->
+    <title>Tonino Lamborghini Residences Bandra | 3 & 4 BHK Luxury Homes Mumbai</title>
+    <meta name="title"
+        content="Tonino Lamborghini Residences Bandra | 3 & 4 BHK Luxury Residences at Bandra Reclamation">
+    <meta name="description"
+        content="Tonino Lamborghini Residences at Bandra Reclamation, Mumbai. Exclusive 3 & 4 BHK luxury residences with lifetime sea views of Bandra-Worli Sea Link. Starting at ₹8.99 Cr+ Taxes. Download brochure & floor plans.">
+    <meta name="keywords"
+        content="Tonino Lamborghini Residences, Tonino Lamborghini Bandra, Tonino Lamborghini Mumbai, Luxury Flats in Bandra Reclamation, 3 BHK Bandra, 4 BHK Bandra, Sea View Apartments Bandra">
+    <meta name="author" content="Authorized Channel Partner">
+
+    <!-- Open Graph / Facebook / WhatsApp -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Tonino Lamborghini Residences | Bandra Reclamation, Mumbai">
+    <meta property="og:description"
+        content="A Rare Icon in Mumbai. Exclusive 3 & 4 BHK Residences with lifetime Sea Link views starting at ₹8.99 Cr+ Taxes.">
+    <meta property="og:image" content="assets/tonino-lamborghini-elevation.jpg">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Tonino Lamborghini Residences | Bandra Reclamation">
+    <meta name="twitter:description"
+        content="Exclusive 3 & 4 BHK Luxury Residences at Bandra Reclamation, Mumbai. Starting at ₹8.99 Cr+ Taxes.">
+    <meta name="twitter:image" content="assets/tonino-lamborghini-elevation.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/tonino-lamborghini-favicon.png">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Raleway:ital,wght@0,300..800;1,300..800&family=Jost:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'heading': ['Montserrat', 'serif'],
+                        'body': ['Montserrat', 'sans-serif'],
+                    },
+                    colors: {
+                        'primary': '#C5A059',
+                        'accent': '#A6823C',
+                        'secondary': '#0B1B3D',
+                        'brand-blue': '#0B1B3D',
+                        'brand-gold': '#C5A059',
+                        'bg-cream': '#FFF8DE',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom Styles -->
+    <style>
+        :root {
+            --primary-gold: #C5A059;
+            --brand-blue: #0B1B3D;
+            --text-dark: #1a1a1a;
+            --bg-cream: #FFF8DE;
+            --color-primary: #0B1B3D;
+            --color-accent: #C5A059;
+            --color-secondary: #F8F9FA;
+        }
+
+        body {
+            font-family: 'Jost', sans-serif;
+            background-color: #FFF8DE;
+            color: #1a1a1a;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Montserrat', serif;
+            color: #0B1B3D;
+        }
+
+        /* Hero Slider */
+        .hero-slide {
+            position: absolute;
+            inset: 0;
+            transform: translateX(100%);
+            transition: transform 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+            z-index: 0;
+            opacity: 1;
+        }
+
+        .hero-slide.active {
+            transform: translateX(0);
+            z-index: 1;
+        }
+
+        .hero-slide.exit {
+            transform: translateX(-100%);
+            z-index: 0;
+        }
+
+        .hero-overlay {
+            z-index: 2;
+        }
+
+        /* Smooth transitions */
+        * {
+            transition: all 0.3s ease;
+        }
+
+        /* Modal backdrop */
+        .modal-backdrop {
+            background: rgba(0, 0, 0, 0.75);
+            backdrop-filter: blur(6px);
+        }
+
+        /* Gallery lightbox */
+        .lightbox-img {
+            max-height: 82vh;
+            object-fit: contain;
+        }
+
+        /* Hover effects */
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(11, 27, 61, 0.15);
+        }
+
+        /* Scroll reveal animation */
+        .reveal {
+            opacity: 1 !important;
+            transform: none !important;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        @keyframes gradientMove {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        @keyframes shrink {
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(0.97);
+            }
+        }
+
+        @keyframes shine {
+            0% {
+                left: -100%;
+            }
+
+            20% {
+                left: 100%;
+            }
+
+            100% {
+                left: 100%;
+            }
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0) rotate(0deg);
+            }
+
+            50% {
+                transform: translateY(-10px) rotate(1deg);
+            }
+        }
+
+        @keyframes pulse-gold {
+
+            0%,
+            100% {
+                box-shadow: 0 0 0 0 rgba(197, 160, 89, 0.4);
+            }
+
+            50% {
+                box-shadow: 0 0 20px 10px rgba(197, 160, 89, 0);
+            }
+        }
+
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .pulse-gold {
+            animation: pulse-gold 3s infinite;
+        }
+
+        .animated-gradient-button {
+            background: linear-gradient(270deg, #C5A059, #A6823C);
+            background-size: 600% 600%;
+            animation: gradientMove 8s ease infinite, shrink 2s ease-in-out infinite;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .animated-gradient-button::after {
+            content: "";
+            position: absolute;
+            top: -50%;
+            left: -100%;
+            width: 50%;
+            height: 200%;
+            background: linear-gradient(to right,
+                    transparent 0%,
+                    rgba(255, 255, 255, 0) 30%,
+                    rgba(255, 255, 255, 0.4) 50%,
+                    rgba(255, 255, 255, 0) 70%,
+                    transparent 100%);
+            transform: rotate(25deg);
+            animation: shine 4s infinite ease-in-out;
+            pointer-events: none;
+        }
+
+        .premium-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(197, 160, 89, 0.25);
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .premium-card:hover {
+            border-color: rgba(197, 160, 89, 0.8);
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(11, 27, 61, 0.15);
+        }
+
+        .premium-card:hover i {
+            transform: scale(1.1) rotate(5deg);
+            color: #0B1B3D;
+        }
+    </style>
+</head>
+
+<body class="bg-[#FFF8DE] text-gray-900 font-body">
+
+    <!-- STICKY NAVBAR (Dark Blue) -->
+    <nav id="navbar"
+        class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-[#0B1B3D] border-b border-black/15 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="#hero" class="flex items-center">
+                        <img src="assets/tonino-lamborghini-logo-white.svg" alt="Tonino Lamborghini Residences Logo"
+                            class="h-14 w-auto object-contain" />
+                    </a>
+                </div>
+
+                <!-- Desktop Nav Links -->
+                <div class="hidden lg:flex items-center space-x-6">
+                    <a href="#hero"
+                        class="text-white hover:text-[#C5A059] font-medium text-sm transition-colors">Home</a>
+                    <a href="#highlights"
+                        class="text-white hover:text-[#C5A059] font-medium text-sm transition-colors">Highlights</a>
+                    <a href="#about"
+                        class="text-white hover:text-[#C5A059] font-medium text-sm transition-colors">About</a>
+                    <a href="#pricing"
+                        class="text-white hover:text-[#C5A059] font-medium text-sm transition-colors">Price & Config</a>
+                    <a href="#floor-plans"
+                        class="text-white hover:text-[#C5A059] font-medium text-sm transition-colors">Floor Plans</a>
+                    <a href="#amenities"
+                        class="text-white hover:text-[#C5A059] font-medium text-sm transition-colors">Amenities</a>
+                    <a href="#gallery"
+                        class="text-white hover:text-[#C5A059] font-medium text-sm transition-colors">Gallery</a>
+                    <a href="#location"
+                        class="text-white hover:text-[#C5A059] font-medium text-sm transition-colors">Location</a>
+                </div>
+
+                <!-- Desktop CTA Button -->
+                <div class="hidden lg:block">
+                    <button onclick="openPopup('Enquire Now - Navbar')"
+                        class="animated-gradient-button text-white px-6 py-2.5 rounded-full font-semibold text-sm shadow-lg hover:scale-105 transition-transform duration-300">
+                        Enquire Now
+                    </button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="lg:hidden text-white focus:outline-none p-2"
+                    aria-label="Toggle Navigation">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path id="menu-path" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-[#0B1B3D] border-t border-white/10 px-4 pt-2 pb-5 space-y-2">
+            <a href="#hero" class="block text-white hover:text-[#C5A059] py-2 font-medium">Home</a>
+            <a href="#highlights" class="block text-white hover:text-[#C5A059] py-2 font-medium">Highlights</a>
+            <a href="#about" class="block text-white hover:text-[#C5A059] py-2 font-medium">About</a>
+            <a href="#pricing" class="block text-white hover:text-[#C5A059] py-2 font-medium">Price & Config</a>
+            <a href="#floor-plans" class="block text-white hover:text-[#C5A059] py-2 font-medium">Floor Plans</a>
+            <a href="#amenities" class="block text-white hover:text-[#C5A059] py-2 font-medium">Amenities</a>
+            <a href="#gallery" class="block text-white hover:text-[#C5A059] py-2 font-medium">Gallery</a>
+            <a href="#location" class="block text-white hover:text-[#C5A059] py-2 font-medium">Location</a>
+
+            <button onclick="openPopup('Enquire Now - Mobile Menu')"
+                class="w-full animated-gradient-button text-white py-3 rounded-lg font-semibold mt-3 shadow-lg">
+                Enquire Now
+            </button>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="relative bg-[#FFF8DE] min-h-screen lg:h-screen w-full flex flex-col lg:block pt-[80px]">
+        <!-- Hero Background Slider -->
+        <div
+            class="relative w-full aspect-square md:aspect-video lg:aspect-auto lg:absolute lg:inset-0 lg:h-full overflow-hidden flex-shrink-0">
+            <!-- Slide 1 -->
+            <div class="hero-slide active">
+                <picture class="w-full h-full">
+                    <source media="(max-width: 1023px)" srcset="assets/hero-slider-1-mobile.webp">
+                    <source type="image/webp" srcset="assets/hero-slider-1.webp">
+                    <img src="assets/hero-slider (1).png"
+                        alt="Tonino Lamborghini Residences Bandra Elevation" class="w-full h-full object-cover">
+                </picture>
+            </div>
+            <!-- Slide 2 -->
+            <div class="hero-slide">
+                <picture class="w-full h-full">
+                    <source media="(max-width: 1023px)" srcset="assets/hero-slider-2-mobile.webp">
+                    <source type="image/webp" srcset="assets/hero-slider-2.webp">
+                    <img src="assets/hero-slider (2).png"
+                        alt="Tonino Lamborghini Residences Sea Link Sunset View" class="w-full h-full object-cover">
+                </picture>
+            </div>
+            <div class="absolute inset-0 hero-overlay bg-black/20"></div>
+        </div>
+
+        <!-- Project Info Card (Floating Left on Desktop) -->
+        <div
+            class="relative lg:absolute lg:bottom-32 lg:left-8 xl:left-20 w-[95%] lg:w-[90%] max-w-sm lg:max-w-[420px] z-20 mx-auto mt-4 lg:mt-0">
+            <div
+                class="premium-card p-5 lg:p-6 rounded-[2rem] shadow-2xl space-y-3.5 text-center bg-white/95 border border-[#C5A059]/30">
+                <div class="space-y-1">
+                    <span
+                        class="inline-block px-3 py-1 bg-[#0B1B3D]/10 text-[#0B1B3D] rounded-full text-[10px] font-bold uppercase tracking-[0.25em]">
+                        Exclusive Pre-Launch
+                    </span>
+                    <h1 class="text-2xl md:text-3xl font-bold text-[#0B1B3D] tracking-tight leading-tight mt-1">
+                        Tonino Lamborghini Residences
+                    </h1>
+                    <div class="flex flex-col gap-0.5">
+                        <p class="text-xs font-semibold text-[#C5A059] uppercase tracking-wider">by Tonino Lamborghini
+                        </p>
+                        <p class="text-[11px] font-bold text-gray-700 tracking-wider uppercase">At Bandra Reclamation,
+                            Mumbai</p>
+                    </div>
+                </div>
+
+                <!-- 4 Key Marketing Pillars as Solid Badges (Dark Blue) -->
+                <div class="grid grid-cols-1 gap-1.5 text-left">
+                    <div class="bg-[#0B1B3D] text-white shadow rounded-lg px-3 py-2 flex items-center gap-2">
+                        <span class="text-[#C5A059] text-xs">◆</span>
+                        <p class="text-[12px] font-semibold tracking-wide">A Rare Icon in Mumbai</p>
+                    </div>
+                    <div class="bg-[#0B1B3D] text-white shadow rounded-lg px-3 py-2 flex items-center gap-2">
+                        <span class="text-[#C5A059] text-xs">◆</span>
+                        <p class="text-[12px] font-semibold tracking-wide">Iconic Italian Legacy</p>
+                    </div>
+                    <div class="grid grid-cols-2 gap-1.5">
+                        <div class="bg-[#0B1B3D] text-white shadow rounded-lg px-2.5 py-2 flex items-center gap-1.5">
+                            <span class="text-[#C5A059] text-xs">◆</span>
+                            <p class="text-[11px] font-semibold tracking-tight">Life Time Sea View</p>
+                        </div>
+                        <div class="bg-[#0B1B3D] text-white shadow rounded-lg px-2.5 py-2 flex items-center gap-1.5">
+                            <span class="text-[#C5A059] text-xs">◆</span>
+                            <p class="text-[11px] font-semibold tracking-tight">3 & 4 BHK Luxury</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Price Block -->
+                <div class="space-y-0.5 pt-1 border-t border-[#C5A059]/20">
+                    <p class="text-[11px] font-bold text-gray-600 uppercase tracking-wider">
+                        Ultra-Luxury 3 & 4 BHK Starting At
+                    </p>
+                    <div class="flex items-baseline justify-center gap-1">
+                        <span class="text-3xl md:text-4xl font-bold text-[#0B1B3D]">₹8.99 Cr*</span>
+                        <span class="text-gray-600 font-semibold text-xs uppercase">+ Taxes</span>
+                    </div>
+                </div>
+
+                <!-- CTA Button -->
+                <button onclick="openPopup('Download Brochure - Hero Card')"
+                    class="w-full animated-gradient-button text-white font-bold py-3.5 rounded-xl shadow-xl transition-all duration-300 uppercase tracking-[0.15em] text-xs hover:scale-[1.02]">
+                    Download Brochure
+                </button>
+            </div>
+        </div>
+
+        <!-- Horizontal Lead Form (Bottom-Center Overlap on Desktop - Dark Blue) -->
+        <div class="absolute -bottom-20 left-1/2 -translate-x-1/2 w-full max-w-5xl px-4 z-40 hidden lg:block">
+            <div class="bg-[#0B1B3D] p-5 rounded-[2rem] shadow-2xl border border-[#C5A059]/30">
+                <div class="flex flex-row items-center gap-6">
+                    <div class="flex-shrink-0 border-r border-white/15 pr-6">
+                        <h3 class="text-white text-lg font-bold !text-white leading-tight">Pre-Register Here</h3>
+                        <p class="text-[#C5A059] text-[10px] font-bold uppercase tracking-widest mt-0.5">For Exclusive
+                            Launch Offers</p>
+                    </div>
+
+                    <form action="sendmail.php" method="POST" class="flex-1 flex flex-row gap-3">
+                        <input type="hidden" name="source" value="Hero Bottom Form">
+                        <div class="flex-1">
+                            <input type="text" name="name" placeholder="Full Name*" required
+                                class="w-full bg-white text-gray-900 rounded-xl px-4 py-3 text-sm placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#C5A059]">
+                        </div>
+                        <div class="flex-1">
+                            <input type="tel" name="phone" placeholder="Phone Number*" required
+                                class="w-full bg-white text-gray-900 rounded-xl px-4 py-3 text-sm placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#C5A059]">
+                        </div>
+                        <div class="flex-1">
+                            <input type="email" name="email" placeholder="Email (Optional)"
+                                class="w-full bg-white text-gray-900 rounded-xl px-4 py-3 text-sm placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#C5A059]">
+                        </div>
+                        <button type="submit"
+                            class="bg-[#C5A059] hover:bg-[#A6823C] text-white font-bold px-8 rounded-xl shadow-lg transition-all flex items-center gap-2 whitespace-nowrap text-sm">
+                            <i data-lucide="download" class="w-4 h-4"></i>
+                            Get Brochure
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Lead Form (Below Hero for Mobile - Dark Blue) -->
+        <div class="w-full px-4 pb-8 lg:hidden relative z-30 mt-4">
+            <div class="bg-[#0B1B3D] p-5 rounded-2xl shadow-xl border border-[#C5A059]/30">
+                <div class="text-center mb-3">
+                    <h3 class="text-white text-lg font-bold !text-white">Pre-Register Here</h3>
+                    <p class="text-[#C5A059] text-[10px] font-bold uppercase tracking-widest">For Exclusive Launch
+                        Offers</p>
+                </div>
+                <form action="sendmail.php" method="POST" class="space-y-3">
+                    <input type="hidden" name="source" value="Mobile Hero Form">
+                    <input type="text" name="name" placeholder="Your Name*" required
+                        class="w-full bg-white rounded-lg p-3 text-sm text-gray-900 focus:outline-none">
+                    <input type="tel" name="phone" placeholder="Mobile Number*" required
+                        class="w-full bg-white rounded-lg p-3 text-sm text-gray-900 focus:outline-none">
+                    <input type="email" name="email" placeholder="Email (Optional)"
+                        class="w-full bg-white rounded-lg p-3 text-sm text-gray-900 focus:outline-none">
+                    <button type="submit"
+                        class="w-full bg-[#C5A059] text-white py-3 rounded-lg font-bold uppercase tracking-widest text-xs shadow-md">
+                        Unlock Pre-Launch Benefits
+                    </button>
+                    <p class="text-center text-white/60 text-[9px] uppercase tracking-wider">
+                        100% Privacy Guaranteed &bull; Zero Spam
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- HIGHLIGHTS SECTION -->
+    <section id="highlights" class="pt-28 lg:pt-36 pb-16 bg-[#FFF8DE]">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <span
+                    class="inline-block px-4 py-1 bg-[#0B1B3D]/10 text-[#0B1B3D] rounded-full text-[10px] font-bold uppercase tracking-[0.2em] mb-2">
+                    Exclusive Living
+                </span>
+                <h2 class="font-heading text-3xl md:text-4xl font-bold text-[#0B1B3D] mb-3">
+                    Project Highlights
+                </h2>
+                <p class="text-base md:text-lg text-gray-700 max-w-2xl mx-auto">
+                    A rare confluence of legendary Italian heritage, Arabian Sea vistas, and palatial architectural
+                    luxury.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+                <!-- Highlight 1 -->
+                <div class="premium-card p-6 rounded-2xl flex flex-col items-center text-center group">
+                    <div
+                        class="w-12 h-12 bg-[#0B1B3D]/10 rounded-xl flex items-center justify-center mb-3 group-hover:bg-[#0B1B3D] group-hover:text-white transition-colors">
+                        <i data-lucide="crown" class="text-[#0B1B3D] w-6 h-6 transition-transform"></i>
+                    </div>
+                    <h3 class="font-heading text-lg font-bold text-gray-900 mb-1">Iconic Italian Legacy</h3>
+                    <p class="text-xs text-gray-600 leading-relaxed">
+                        Exquisite craftsmanship and bespoke Tonino Lamborghini design detailing woven into every square
+                        foot.
+                    </p>
+                </div>
+
+                <!-- Highlight 2 -->
+                <div class="premium-card p-6 rounded-2xl flex flex-col items-center text-center group">
+                    <div
+                        class="w-12 h-12 bg-[#0B1B3D]/10 rounded-xl flex items-center justify-center mb-3 group-hover:bg-[#0B1B3D] group-hover:text-white transition-colors">
+                        <i data-lucide="waves" class="text-[#0B1B3D] w-6 h-6 transition-transform"></i>
+                    </div>
+                    <h3 class="font-heading text-lg font-bold text-gray-900 mb-1">Life Time Sea View</h3>
+                    <p class="text-xs text-gray-600 leading-relaxed">
+                        Unobstructed, forever views of the Arabian Sea and the iconic Bandra-Worli Sea Link from
+                        high-floor decks.
+                    </p>
+                </div>
+
+                <!-- Highlight 3 -->
+                <div class="premium-card p-6 rounded-2xl flex flex-col items-center text-center group">
+                    <div
+                        class="w-12 h-12 bg-[#0B1B3D]/10 rounded-xl flex items-center justify-center mb-3 group-hover:bg-[#0B1B3D] group-hover:text-white transition-colors">
+                        <i data-lucide="home" class="text-[#0B1B3D] w-6 h-6 transition-transform"></i>
+                    </div>
+                    <h3 class="font-heading text-lg font-bold text-gray-900 mb-1">3 & 4 BHK Luxury Homes</h3>
+                    <p class="text-xs text-gray-600 leading-relaxed">
+                        Grand floor plates with expansive living rooms, soaring ceilings, and dedicated private elevator
+                        access.
+                    </p>
+                </div>
+
+                <!-- Highlight 4 -->
+                <div class="premium-card p-6 rounded-2xl flex flex-col items-center text-center group">
+                    <div
+                        class="w-12 h-12 bg-[#0B1B3D]/10 rounded-xl flex items-center justify-center mb-3 group-hover:bg-[#0B1B3D] group-hover:text-white transition-colors">
+                        <i data-lucide="map-pin" class="text-[#0B1B3D] w-6 h-6 transition-transform"></i>
+                    </div>
+                    <h3 class="font-heading text-lg font-bold text-gray-900 mb-1">Bandra Reclamation Address</h3>
+                    <p class="text-xs text-gray-600 leading-relaxed">
+                        Prime gateway connecting Mumbai's Western Suburbs with South Mumbai; just 1 minute to the Sea
+                        Link.
+                    </p>
+                </div>
+
+                <!-- Highlight 5 -->
+                <div class="premium-card p-6 rounded-2xl flex flex-col items-center text-center group">
+                    <div
+                        class="w-12 h-12 bg-[#0B1B3D]/10 rounded-xl flex items-center justify-center mb-3 group-hover:bg-[#0B1B3D] group-hover:text-white transition-colors">
+                        <i data-lucide="sparkles" class="text-[#0B1B3D] w-6 h-6 transition-transform"></i>
+                    </div>
+                    <h3 class="font-heading text-lg font-bold text-gray-900 mb-1">Skyline Infinity Pool</h3>
+                    <p class="text-xs text-gray-600 leading-relaxed">
+                        Elevated sea-facing infinity pool, temperature-controlled water, and sunset cabana decks.
+                    </p>
+                </div>
+
+                <!-- Highlight 6 -->
+                <div class="premium-card p-6 rounded-2xl flex flex-col items-center text-center group">
+                    <div
+                        class="w-12 h-12 bg-[#0B1B3D]/10 rounded-xl flex items-center justify-center mb-3 group-hover:bg-[#0B1B3D] group-hover:text-white transition-colors">
+                        <i data-lucide="shield-check" class="text-[#0B1B3D] w-6 h-6 transition-transform"></i>
+                    </div>
+                    <h3 class="font-heading text-lg font-bold text-gray-900 mb-1">5-Tier Security & Concierge</h3>
+                    <p class="text-xs text-gray-600 leading-relaxed">
+                        Smart biometric security, 24/7 dedicated valet, private lobby lounges, and white-glove concierge
+                        services.
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex justify-center mt-10">
+                <button onclick="openPopup('Download Project Highlights Brochure')"
+                    class="animated-gradient-button text-white font-semibold px-8 py-3.5 rounded-lg text-sm shadow-lg hover:scale-105 transition-transform duration-300">
+                    Know Overview
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="py-20 bg-[#FFF8DE] relative overflow-hidden">
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-0 max-w-6xl mx-auto">
+                <!-- Image with Offset Gold Frame -->
+                <div class="w-full lg:w-3/5 relative group">
+                    <div
+                        class="absolute -inset-4 border-2 border-[#C5A059]/30 rounded-3xl translate-x-4 translate-y-4 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform duration-500">
+                    </div>
+                    <div class="relative overflow-hidden rounded-3xl shadow-2xl">
+                        <img src="assets/new images/tonino-lamborghini-elevation.webp"
+                            alt="Tonino Lamborghini Residences Architectural Grandeur"
+                            class="w-full h-auto transform group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                </div>
+
+                <!-- Overlapping Text Card -->
+                <div class="w-full lg:w-1/2 lg:-ml-20 relative z-20">
+                    <div class="premium-card p-6 lg:p-8 rounded-[2rem] shadow-2xl border border-[#C5A059]/30 bg-white">
+                        <div
+                            class="inline-block px-3 py-1 bg-[#0B1B3D]/10 text-[#0B1B3D] rounded-full text-[10px] font-bold uppercase tracking-widest mb-3">
+                            Italian Design Excellence
+                        </div>
+                        <h2 class="font-heading text-2xl md:text-3xl font-bold text-[#0B1B3D] mb-3 leading-tight">
+                            About Tonino Lamborghini Residences
+                        </h2>
+                        <div class="space-y-3 text-sm text-gray-700 leading-relaxed">
+                            <p>
+                                Rising along the prestigious shoreline of Bandra Reclamation, Tonino Lamborghini
+                                Residences brings the timeless elegance and passionate spirit of Italian design to
+                                Mumbai's elite skyline.
+                            </p>
+                            <p>
+                                Thoughtfully positioned to provide uninterrupted, lifetime sea views of the Arabian Sea
+                                and the Bandra-Worli Sea Link, this landmark development offers expansive 3 & 4 BHK
+                                residences designed for discerning homeowners who demand uncompromised privacy,
+                                exquisite finishes, and palatial living.
+                            </p>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-6 my-5 py-4 border-y border-gray-200">
+                            <div>
+                                <h4 class="text-[10px] uppercase tracking-widest text-[#C5A059] font-bold mb-0.5">
+                                    Architecture</h4>
+                                <p class="text-xl font-heading font-bold text-[#0B1B3D]">Iconic High-Rise</p>
+                            </div>
+                            <div>
+                                <h4 class="text-[10px] uppercase tracking-widest text-[#C5A059] font-bold mb-0.5">
+                                    Location</h4>
+                                <p class="text-xl font-heading font-bold text-[#0B1B3D]">Bandra Reclamation</p>
+                            </div>
+                        </div>
+
+                        <button onclick="openPopup('Download Project Overview')"
+                            class="animated-gradient-button text-white font-bold px-8 py-3 rounded-xl text-xs shadow-xl hover:scale-[1.02] transition-all flex items-center gap-2">
+                            <i data-lucide="download" class="w-4 h-4"></i>
+                            Download Brochure
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MASTER PLAN SECTION -->
+    <section id="master-plan" class="py-20 bg-[#FFF8DE] relative overflow-hidden">
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-center mb-12">
+                <span class="text-[#C5A059] font-bold uppercase tracking-widest text-xs">Architectural
+                    Masterpiece</span>
+                <h2 class="font-heading text-3xl md:text-4xl font-bold text-[#0B1B3D] mt-2 mb-3">Master Layout</h2>
+                <p class="text-base text-gray-700 max-w-2xl mx-auto">
+                    Explore the master planning and sea-facing architectural layout of Tonino Lamborghini Residences at
+                    Bandra Reclamation.
+                </p>
+            </div>
+
+            <div class="max-w-4xl mx-auto">
+                <div class="relative group">
+                    <div
+                        class="absolute -inset-4 border-2 border-[#C5A059]/30 rounded-[2.5rem] translate-x-3 translate-y-3">
+                    </div>
+                    <div class="premium-card p-4 rounded-[2rem] overflow-hidden shadow-2xl relative bg-white">
+                        <div class="aspect-[16/9] bg-gray-100 relative group overflow-hidden rounded-2xl">
+                            <img src="assets/tonino-lamborghini-master-plan.svg"
+                                alt="Tonino Lamborghini Residences Master Plan"
+                                class="w-full h-full object-cover blur-sm group-hover:blur-[2px] transition-all duration-500">
+                            <div
+                                class="absolute inset-0 bg-black/40 flex flex-col items-center justify-center text-center p-6">
+                                <div
+                                    class="w-14 h-14 bg-white/10 backdrop-blur-md rounded-full flex items-center justify-center mb-4 border border-white/20">
+                                    <i data-lucide="lock" class="text-white w-6 h-6"></i>
+                                </div>
+                                <h3 class="text-white text-xl font-bold mb-4">Master Layout & Tower Plan</h3>
+                                <button onclick="openPopup('Request Full Master Plan')"
+                                    class="animated-gradient-button text-white font-bold py-3 px-8 rounded-full text-xs uppercase tracking-widest shadow-lg">
+                                    Request Full Plan
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRICING & CONFIGURATIONS SECTION -->
+    <section id="pricing" class="py-20 bg-white relative overflow-hidden">
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-center mb-12">
+                <span class="text-[#C5A059] font-bold uppercase tracking-widest text-xs">Investment Overview</span>
+                <h2 class="font-heading text-3xl md:text-4xl font-bold text-[#0B1B3D] mt-2 mb-3">
+                    Pricing & Configurations
+                </h2>
+                <p class="text-base text-gray-700 max-w-2xl mx-auto">
+                    Choose from exclusive 3 & 4 BHK residences and bespoke penthouses designed for palatial living.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- 3 BHK Card -->
+                <div
+                    class="bg-[#FFF8DE]/60 border border-[#C5A059]/30 rounded-[2rem] p-7 space-y-5 hover:shadow-2xl transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between border-b border-[#C5A059]/20 pb-3 mb-4">
+                            <h3 class="text-xl font-bold text-[#0B1B3D]">3 BHK Luxury</h3>
+                            <span
+                                class="text-[10px] font-bold bg-[#0B1B3D] text-white px-2.5 py-1 rounded-full uppercase">Sea
+                                View</span>
+                        </div>
+                        <div class="space-y-3">
+                            <div class="flex justify-between text-sm">
+                                <span class="text-gray-600">Carpet Area</span>
+                                <span class="font-bold text-[#0B1B3D]">1,650 - 1,950 Sq.Ft.</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-600 text-sm">Starting Price</span>
+                                <span class="text-[#0B1B3D] font-bold text-xl">₹8.99 Cr*</span>
+                            </div>
+                            <div class="text-xs text-gray-500 pt-1">
+                                + Government Taxes & Statutory Charges
+                            </div>
+                        </div>
+                    </div>
+                    <button onclick="openPopup('Get 3 BHK Cost Sheet')"
+                        class="w-full py-3.5 bg-[#0B1B3D] hover:bg-[#07132a] text-white font-bold rounded-xl transition-all flex items-center justify-center gap-2 text-xs shadow-md">
+                        <i data-lucide="file-text" class="w-4 h-4 text-[#C5A059]"></i>
+                        Get 3 BHK Cost Sheet
+                    </button>
+                </div>
+
+                <!-- 4 BHK Card (Featured) -->
+                <div
+                    class="bg-[#FFF8DE] border-2 border-[#C5A059] rounded-[2rem] p-7 space-y-5 shadow-xl hover:shadow-2xl transition-all flex flex-col justify-between relative transform lg:-translate-y-2">
+                    <div
+                        class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-[#C5A059] text-white text-[10px] font-bold uppercase tracking-widest px-4 py-1 rounded-full shadow">
+                        Most Preferred
+                    </div>
+                    <div>
+                        <div class="flex items-center justify-between border-b border-[#C5A059]/20 pb-3 mb-4 mt-1">
+                            <h3 class="text-xl font-bold text-[#0B1B3D]">4 BHK Palatial</h3>
+                            <span
+                                class="text-[10px] font-bold bg-[#0B1B3D] text-white px-2.5 py-1 rounded-full uppercase">Panoramic
+                                View</span>
+                        </div>
+                        <div class="space-y-3">
+                            <div class="flex justify-between text-sm">
+                                <span class="text-gray-600">Carpet Area</span>
+                                <span class="font-bold text-[#0B1B3D]">2,800 - 3,450 Sq.Ft.</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-600 text-sm">Starting Price</span>
+                                <span class="text-[#0B1B3D] font-bold text-xl">₹18.99 Cr*</span>
+                            </div>
+                            <div class="text-xs text-gray-500 pt-1">
+                                + Government Taxes & Statutory Charges
+                            </div>
+                        </div>
+                    </div>
+                    <button onclick="openPopup('Get 4 BHK Cost Sheet')"
+                        class="w-full py-3.5 animated-gradient-button text-white font-bold rounded-xl transition-all flex items-center justify-center gap-2 text-xs shadow-lg">
+                        <i data-lucide="file-text" class="w-4 h-4"></i>
+                        Get 4 BHK Cost Sheet
+                    </button>
+                </div>
+
+                <!-- Penthouse / Duplex Card -->
+                <div
+                    class="bg-[#FFF8DE]/60 border border-[#C5A059]/30 rounded-[2rem] p-7 space-y-5 hover:shadow-2xl transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between border-b border-[#C5A059]/20 pb-3 mb-4">
+                            <h3 class="text-xl font-bold text-[#0B1B3D]">Penthouse Suites</h3>
+                            <span
+                                class="text-[10px] font-bold bg-[#0B1B3D] text-white px-2.5 py-1 rounded-full uppercase">Signature</span>
+                        </div>
+                        <div class="space-y-3">
+                            <div class="flex justify-between text-sm">
+                                <span class="text-gray-600">Carpet Area</span>
+                                <span class="font-bold text-[#0B1B3D]">Custom Layouts</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-600 text-sm">Starting Price</span>
+                                <span class="text-[#0B1B3D] font-bold text-xl">Price On Request</span>
+                            </div>
+                            <div class="text-xs text-gray-500 pt-1">
+                                Private Sky Terrace & Dedicated Elevators
+                            </div>
+                        </div>
+                    </div>
+                    <button onclick="openPopup('Get Penthouse Details')"
+                        class="w-full py-3.5 bg-[#0B1B3D] hover:bg-[#07132a] text-white font-bold rounded-xl transition-all flex items-center justify-center gap-2 text-xs shadow-md">
+                        <i data-lucide="file-text" class="w-4 h-4 text-[#C5A059]"></i>
+                        Request Penthouse Plan
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FLOOR PLANS SECTION -->
+    <section id="floor-plans" class="py-20 bg-[#FFF8DE] relative overflow-hidden">
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-center mb-12">
+                <span class="text-[#C5A059] font-bold uppercase tracking-widest text-xs">Architectural Drawings</span>
+                <h2 class="font-heading text-3xl md:text-4xl font-bold text-[#0B1B3D] mt-2 mb-3">Floor Plans</h2>
+                <p class="text-base text-gray-700 max-w-2xl mx-auto">
+                    Preview spacious floor plans crafted with private foyers, expansive living rooms, and scenic
+                    balconies.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- 3 BHK Floor Plan -->
+                <div class="relative group">
+                    <div class="premium-card p-4 rounded-[2rem] bg-white shadow-xl relative overflow-hidden">
+                        <div
+                            class="aspect-square bg-gray-50 rounded-2xl relative overflow-hidden flex items-center justify-center">
+                            <img src="assets/tonino-lamborghini-floor-plan-3bhk.svg" alt="3 BHK Unit Plan"
+                                class="w-full h-full object-cover blur-sm">
+                            <div
+                                class="absolute inset-0 bg-black/40 flex flex-col items-center justify-center text-center p-4">
+                                <h4 class="text-white font-bold text-lg mb-2">3 BHK Sea View Layout</h4>
+                                <p class="text-white/80 text-xs mb-4">1,650 - 1,950 Sq.Ft. Carpet</p>
+                                <button onclick="openPopup('View 3 BHK Floor Plan')"
+                                    class="px-5 py-2.5 bg-white text-[#0B1B3D] text-xs font-bold rounded-full uppercase tracking-wider shadow hover:bg-[#FFF8DE]">
+                                    Unlock Floor Plan
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4 BHK Floor Plan -->
+                <div class="relative group">
+                    <div class="premium-card p-4 rounded-[2rem] bg-white shadow-xl relative overflow-hidden">
+                        <div
+                            class="aspect-square bg-gray-50 rounded-2xl relative overflow-hidden flex items-center justify-center">
+                            <img src="assets/tonino-lamborghini-floor-plan-4bhk.svg" alt="4 BHK Unit Plan"
+                                class="w-full h-full object-cover blur-sm">
+                            <div
+                                class="absolute inset-0 bg-black/40 flex flex-col items-center justify-center text-center p-4">
+                                <h4 class="text-white font-bold text-lg mb-2">4 BHK Grand Layout</h4>
+                                <p class="text-white/80 text-xs mb-4">2,800 - 3,450 Sq.Ft. Carpet</p>
+                                <button onclick="openPopup('View 4 BHK Floor Plan')"
+                                    class="px-5 py-2.5 bg-white text-[#0B1B3D] text-xs font-bold rounded-full uppercase tracking-wider shadow hover:bg-[#FFF8DE]">
+                                    Unlock Floor Plan
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Penthouse Layout -->
+                <div class="relative group">
+                    <div class="premium-card p-4 rounded-[2rem] bg-white shadow-xl relative overflow-hidden">
+                        <div
+                            class="aspect-square bg-gray-50 rounded-2xl relative overflow-hidden flex items-center justify-center">
+                            <img src="assets/tonino-lamborghini-floor-plan-penthouse.svg"
+                                alt="Penthouse Unit Plan" class="w-full h-full object-cover blur-sm">
+                            <div
+                                class="absolute inset-0 bg-black/40 flex flex-col items-center justify-center text-center p-4">
+                                <h4 class="text-white font-bold text-lg mb-2">Presidential Duplex</h4>
+                                <p class="text-white/80 text-xs mb-4">Custom Sky Villa Layout</p>
+                                <button onclick="openPopup('View Penthouse Layout')"
+                                    class="px-5 py-2.5 bg-white text-[#0B1B3D] text-xs font-bold rounded-full uppercase tracking-wider shadow hover:bg-[#FFF8DE]">
+                                    Unlock Floor Plan
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AMENITIES SECTION -->
+    <section id="amenities" class="py-20 bg-white relative overflow-hidden">
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-center mb-12">
+                <span
+                    class="inline-block px-4 py-1 bg-[#0B1B3D]/10 text-[#0B1B3D] rounded-full text-xs font-bold uppercase tracking-widest mb-2">
+                    Bespoke Lifestyle
+                </span>
+                <h2 class="font-heading text-3xl md:text-4xl font-bold text-[#0B1B3D] mb-3">
+                    Unmatched Amenities
+                </h2>
+                <p class="text-base text-gray-700 max-w-2xl mx-auto">
+                    A collection of signature lifestyle amenities crafted to provide relaxation, wellness, and
+                    entertainment.
+                </p>
+            </div>
+
+            <!-- Primary 6 Amenities with Images -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto mb-12">
+                <!-- Amenity 1 -->
+                <div class="relative group h-[280px] overflow-hidden rounded-3xl shadow-xl">
+                    <img src="assets/new images/tonino-lamborghini-infinity-pool.webp" alt="Skyline Infinity Pool"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-5 w-full">
+                        <div
+                            class="bg-white/15 backdrop-blur-md border border-white/20 p-3.5 rounded-2xl flex items-center gap-3">
+                            <div
+                                class="w-10 h-10 bg-[#0B1B3D] rounded-xl flex items-center justify-center shadow-lg text-[#C5A059]">
+                                <i data-lucide="waves" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold text-base">Skyline Infinity Pool</h4>
+                                <p class="text-white/80 text-xs">Sea-Facing Heated Pool & Deck</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Amenity 2 -->
+                <div class="relative group h-[280px] overflow-hidden rounded-3xl shadow-xl">
+                    <img src="assets/tonino-lamborghini-italian-spa.svg" alt="Italian Spa & Wellness"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-5 w-full">
+                        <div
+                            class="bg-white/15 backdrop-blur-md border border-white/20 p-3.5 rounded-2xl flex items-center gap-3">
+                            <div
+                                class="w-10 h-10 bg-[#0B1B3D] rounded-xl flex items-center justify-center shadow-lg text-[#C5A059]">
+                                <i data-lucide="sparkles" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold text-base">Italian Spa & Wellness</h4>
+                                <p class="text-white/80 text-xs">Sauna, Steam & Therapy Suites</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Amenity 3 -->
+                <div class="relative group h-[280px] overflow-hidden rounded-3xl shadow-xl">
+                    <img src="assets/tonino-lamborghini-technogym.svg" alt="Fitness Studio"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-5 w-full">
+                        <div
+                            class="bg-white/15 backdrop-blur-md border border-white/20 p-3.5 rounded-2xl flex items-center gap-3">
+                            <div
+                                class="w-10 h-10 bg-[#0B1B3D] rounded-xl flex items-center justify-center shadow-lg text-[#C5A059]">
+                                <i data-lucide="dumbbell" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold text-base">Technogym Fitness Studio</h4>
+                                <p class="text-white/80 text-xs">Cardio, Weights & Personal Training</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Amenity 4 -->
+                <div class="relative group h-[280px] overflow-hidden rounded-3xl shadow-xl">
+                    <img src="assets/new images/tonino-lamborghini-living-room.webp" alt="Resident Sky Lounge"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-5 w-full">
+                        <div
+                            class="bg-white/15 backdrop-blur-md border border-white/20 p-3.5 rounded-2xl flex items-center gap-3">
+                            <div
+                                class="w-10 h-10 bg-[#0B1B3D] rounded-xl flex items-center justify-center shadow-lg text-[#C5A059]">
+                                <i data-lucide="coffee" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold text-base">Resident Sky Lounge</h4>
+                                <p class="text-white/80 text-xs">Sunset Cabanas & Private Dining</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Amenity 5 -->
+                <div class="relative group h-[280px] overflow-hidden rounded-3xl shadow-xl">
+                    <img src="assets/tonino-lamborghini-kids-zone.svg" alt="Children's Recreation"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-5 w-full">
+                        <div
+                            class="bg-white/15 backdrop-blur-md border border-white/20 p-3.5 rounded-2xl flex items-center gap-3">
+                            <div
+                                class="w-10 h-10 bg-[#0B1B3D] rounded-xl flex items-center justify-center shadow-lg text-[#C5A059]">
+                                <i data-lucide="palette" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold text-base">Children's Recreation Zone</h4>
+                                <p class="text-white/80 text-xs">Indoor Game Room & Kids Pool</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Amenity 6 -->
+                <div class="relative group h-[280px] overflow-hidden rounded-3xl shadow-xl">
+                    <img src="assets/new images/tonino-lamborghini-grand-lobby.webp" alt="Grand Entrance Lobby"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-5 w-full">
+                        <div
+                            class="bg-white/15 backdrop-blur-md border border-white/20 p-3.5 rounded-2xl flex items-center gap-3">
+                            <div
+                                class="w-10 h-10 bg-[#0B1B3D] rounded-xl flex items-center justify-center shadow-lg text-[#C5A059]">
+                                <i data-lucide="building" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold text-base">Grand Double-Height Lobby</h4>
+                                <p class="text-white/80 text-xs">Italian Marble & Valet Concierge</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Amenities Grid -->
+            <div
+                class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 pt-8 border-t border-gray-200 max-w-6xl mx-auto">
+                <div class="flex flex-col items-center text-center group">
+                    <div
+                        class="w-12 h-12 bg-[#FFF8DE] rounded-full flex items-center justify-center mb-2 group-hover:bg-[#0B1B3D] group-hover:text-white transition-colors">
+                        <i data-lucide="car" class="text-[#0B1B3D] w-5 h-5"></i>
+                    </div>
+                    <span class="text-xs font-bold text-gray-800">Valet Parking</span>
+                </div>
+                <div class="flex flex-col items-center text-center group">
+                    <div
+                        class="w-12 h-12 bg-[#FFF8DE] rounded-full flex items-center justify-center mb-2 group-hover:bg-[#0B1B3D] group-hover:text-white transition-colors">
+                        <i data-lucide="shield-check" class="text-[#0B1B3D] w-5 h-5"></i>
+                    </div>
+                    <span class="text-xs font-bold text-gray-800">5-Tier Security</span>
+                </div>
+                <div class="flex flex-col items-center text-center group">
+                    <div
+                        class="w-12 h-12 bg-[#FFF8DE] rounded-full flex items-center justify-center mb-2 group-hover:bg-[#0B1B3D] group-hover:text-white transition-colors">
+                        <i data-lucide="wifi" class="text-[#0B1B3D] w-5 h-5"></i>
+                    </div>
+                    <span class="text-xs font-bold text-gray-800">Smart Home Automation</span>
+                </div>
+                <div class="flex flex-col items-center text-center group">
+                    <div
+                        class="w-12 h-12 bg-[#FFF8DE] rounded-full flex items-center justify-center mb-2 group-hover:bg-[#0B1B3D] group-hover:text-white transition-colors">
+                        <i data-lucide="zap" class="text-[#0B1B3D] w-5 h-5"></i>
+                    </div>
+                    <span class="text-xs font-bold text-gray-800">EV Charging Bays</span>
+                </div>
+                <div class="flex flex-col items-center text-center group">
+                    <div
+                        class="w-12 h-12 bg-[#FFF8DE] rounded-full flex items-center justify-center mb-2 group-hover:bg-[#0B1B3D] group-hover:text-white transition-colors">
+                        <i data-lucide="briefcase" class="text-[#0B1B3D] w-5 h-5"></i>
+                    </div>
+                    <span class="text-xs font-bold text-gray-800">Private Boardroom</span>
+                </div>
+                <div class="flex flex-col items-center text-center group">
+                    <div
+                        class="w-12 h-12 bg-[#FFF8DE] rounded-full flex items-center justify-center mb-2 group-hover:bg-[#0B1B3D] group-hover:text-white transition-colors">
+                        <i data-lucide="sun" class="text-[#0B1B3D] w-5 h-5"></i>
+                    </div>
+                    <span class="text-xs font-bold text-gray-800">Yoga & Zen Deck</span>
+                </div>
+            </div>
+
+            <div class="flex justify-center mt-10">
+                <button onclick="openPopup('View Full Amenities List')"
+                    class="animated-gradient-button text-white font-semibold px-8 py-3 rounded-lg text-sm shadow-lg hover:scale-105 transition-transform duration-300">
+                    View Full Amenities List
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY SECTION (With Working Lightbox) -->
+    <section id="gallery" class="py-20 bg-[#FFF8DE]">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <div class="text-center mb-12">
+                <span class="text-[#C5A059] font-bold uppercase tracking-widest text-xs">Visual Tour</span>
+                <h2 class="font-heading text-3xl md:text-4xl font-bold text-[#0B1B3D] mt-2 mb-3">Project Gallery</h2>
+                <p class="text-base text-gray-700 font-body">Experience the luxury through our curated photography</p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Gallery 1 -->
+                <div class="gallery-item group relative cursor-pointer overflow-hidden rounded-2xl shadow-lg"
+                    onclick="openLightbox(0)">
+                    <img src="assets/new images/tonino-lamborghini-elevation.webp" alt="Architectural Elevation"
+                        class="w-full aspect-video object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div
+                        class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <span
+                            class="text-white text-xs font-bold tracking-wider uppercase bg-[#0B1B3D]/90 px-4 py-2 rounded-full">
+                            View Fullscreen
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Gallery 2 -->
+                <div class="gallery-item group relative cursor-pointer overflow-hidden rounded-2xl shadow-lg"
+                    onclick="openLightbox(1)">
+                    <img src="assets/new images/tonino-lamborghini-infinity-pool.webp"
+                        alt="Skyline Infinity Pool & Sunset Deck"
+                        class="w-full aspect-video object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div
+                        class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <span
+                            class="text-white text-xs font-bold tracking-wider uppercase bg-[#0B1B3D]/90 px-4 py-2 rounded-full">
+                            View Fullscreen
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Gallery 3 -->
+                <div class="gallery-item group relative cursor-pointer overflow-hidden rounded-2xl shadow-lg"
+                    onclick="openLightbox(2)">
+                    <img src="assets/new images/tonino-lamborghini-living-room.webp" alt="Palatial Living Room"
+                        class="w-full aspect-video object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div
+                        class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <span
+                            class="text-white text-xs font-bold tracking-wider uppercase bg-[#0B1B3D]/90 px-4 py-2 rounded-full">
+                            View Fullscreen
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Gallery 4 -->
+                <div class="gallery-item group relative cursor-pointer overflow-hidden rounded-2xl shadow-lg"
+                    onclick="openLightbox(3)">
+                    <img src="assets/new images/tonino-lamborghini-master-suite.webp" alt="Master Bedroom Suite"
+                        class="w-full aspect-video object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div
+                        class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <span
+                            class="text-white text-xs font-bold tracking-wider uppercase bg-[#0B1B3D]/90 px-4 py-2 rounded-full">
+                            View Fullscreen
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Gallery 5 -->
+                <div class="gallery-item group relative cursor-pointer overflow-hidden rounded-2xl shadow-lg"
+                    onclick="openLightbox(4)">
+                    <img src="assets/new images/tonino-lamborghini-grand-lobby.webp" alt="Grand Double-Height Onyx Concierge Lobby"
+                        class="w-full aspect-video object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div
+                        class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <span
+                            class="text-white text-xs font-bold tracking-wider uppercase bg-[#0B1B3D]/90 px-4 py-2 rounded-full">
+                            View Fullscreen
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Gallery 6 -->
+                <div class="gallery-item group relative cursor-pointer overflow-hidden rounded-2xl shadow-lg"
+                    onclick="openLightbox(5)">
+                    <img src="assets/new images/tonino-lamborghini-sealink-sunset.webp" alt="Bandra-Worli Sea Link Dusk Panorama"
+                        class="w-full aspect-video object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div
+                        class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <span
+                            class="text-white text-xs font-bold tracking-wider uppercase bg-[#0B1B3D]/90 px-4 py-2 rounded-full">
+                            View Fullscreen
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex justify-center mt-12">
+                <button onclick="openPopup('View Full Gallery')"
+                    class="animated-gradient-button text-white font-semibold px-8 py-3.5 rounded-lg text-sm shadow-lg hover:scale-105 transition-transform duration-300">
+                    View Complete Gallery
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- LOCATION & CONNECTIVITY SECTION -->
+    <section id="location" class="bg-[#FFF8DE] py-20 relative overflow-hidden">
+        <div class="container mx-auto px-4 max-w-6xl relative z-10">
+            <div class="text-center mb-12">
+                <span
+                    class="inline-block px-4 py-1 bg-[#0B1B3D]/10 text-[#0B1B3D] rounded-full text-xs font-bold uppercase tracking-widest mb-2">
+                    Prime Mumbai Location
+                </span>
+                <h2 class="font-heading text-3xl md:text-4xl font-bold text-[#0B1B3D] mb-3">
+                    Bandra Reclamation, Mumbai
+                </h2>
+                <p class="text-base text-gray-700 font-body max-w-3xl mx-auto">
+                    The golden gateway of Mumbai. Perfectly positioned at Bandra Reclamation, offering rapid
+                    connectivity across the Sea Link to Worli, South Mumbai, and the airport.
+                </p>
+            </div>
+
+            <div class="flex flex-col lg:flex-row gap-10 items-start">
+                <!-- Connectivity Categories -->
+                <div class="w-full lg:w-[48%] space-y-6">
+                    <!-- Transport & Highways -->
+                    <div>
+                        <h4
+                            class="text-[#0B1B3D] font-bold uppercase tracking-widest text-xs mb-3 flex items-center gap-2 border-b border-[#C5A059]/30 pb-1.5">
+                            <i data-lucide="navigation" class="w-4 h-4 text-[#C5A059]"></i> Connectivity & Transit
+                        </h4>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                            <div
+                                class="premium-card p-3 rounded-xl flex items-center justify-between border border-[#C5A059]/15">
+                                <span class="text-xs text-gray-800 font-medium">Bandra-Worli Sea Link</span>
+                                <span class="text-[10px] font-bold text-[#0B1B3D] bg-[#0B1B3D]/10 px-2 py-0.5 rounded">1
+                                    Min</span>
+                            </div>
+                            <div
+                                class="premium-card p-3 rounded-xl flex items-center justify-between border border-[#C5A059]/15">
+                                <span class="text-xs text-gray-800 font-medium">Western Express Highway</span>
+                                <span class="text-[10px] font-bold text-[#0B1B3D] bg-[#0B1B3D]/10 px-2 py-0.5 rounded">3
+                                    Min</span>
+                            </div>
+                            <div
+                                class="premium-card p-3 rounded-xl flex items-center justify-between border border-[#C5A059]/15">
+                                <span class="text-xs text-gray-800 font-medium">BKC (Business District)</span>
+                                <span
+                                    class="text-[10px] font-bold text-[#0B1B3D] bg-[#0B1B3D]/10 px-2 py-0.5 rounded">10
+                                    Min</span>
+                            </div>
+                            <div
+                                class="premium-card p-3 rounded-xl flex items-center justify-between border border-[#C5A059]/15">
+                                <span class="text-xs text-gray-800 font-medium">Worli / Lower Parel</span>
+                                <span
+                                    class="text-[10px] font-bold text-[#0B1B3D] bg-[#0B1B3D]/10 px-2 py-0.5 rounded">10
+                                    Min</span>
+                            </div>
+                            <div
+                                class="premium-card p-3 rounded-xl flex items-center justify-between border border-[#C5A059]/15">
+                                <span class="text-xs text-gray-800 font-medium">Mumbai International Airport</span>
+                                <span
+                                    class="text-[10px] font-bold text-[#0B1B3D] bg-[#0B1B3D]/10 px-2 py-0.5 rounded">20
+                                    Min</span>
+                            </div>
+                            <div
+                                class="premium-card p-3 rounded-xl flex items-center justify-between border border-[#C5A059]/15">
+                                <span class="text-xs text-gray-800 font-medium">Bandra Railway Station</span>
+                                <span class="text-[10px] font-bold text-[#0B1B3D] bg-[#0B1B3D]/10 px-2 py-0.5 rounded">7
+                                    Min</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Hospitals & Schools -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <h4
+                                class="text-[#0B1B3D] font-bold uppercase tracking-widest text-xs mb-2.5 flex items-center gap-1.5 border-b border-[#C5A059]/30 pb-1">
+                                <i data-lucide="heart" class="w-3.5 h-3.5 text-[#C5A059]"></i> Healthcare
+                            </h4>
+                            <div class="space-y-2">
+                                <div class="premium-card p-2.5 rounded-xl flex items-center justify-between text-xs">
+                                    <span class="text-gray-800 font-medium">Lilavati Hospital</span>
+                                    <span
+                                        class="text-[10px] font-bold text-[#0B1B3D] bg-[#0B1B3D]/10 px-2 py-0.5 rounded">4
+                                        Min</span>
+                                </div>
+                                <div class="premium-card p-2.5 rounded-xl flex items-center justify-between text-xs">
+                                    <span class="text-gray-800 font-medium">P.D. Hinduja Hospital</span>
+                                    <span
+                                        class="text-[10px] font-bold text-[#0B1B3D] bg-[#0B1B3D]/10 px-2 py-0.5 rounded">8
+                                        Min</span>
+                                </div>
+                                <div class="premium-card p-2.5 rounded-xl flex items-center justify-between text-xs">
+                                    <span class="text-gray-800 font-medium">Breach Candy Hospital</span>
+                                    <span
+                                        class="text-[10px] font-bold text-[#0B1B3D] bg-[#0B1B3D]/10 px-2 py-0.5 rounded">15
+                                        Min</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h4
+                                class="text-[#0B1B3D] font-bold uppercase tracking-widest text-xs mb-2.5 flex items-center gap-1.5 border-b border-[#C5A059]/30 pb-1">
+                                <i data-lucide="shopping-bag" class="w-3.5 h-3.5 text-[#C5A059]"></i> Lifestyle &
+                                Leisure
+                            </h4>
+                            <div class="space-y-2">
+                                <div class="premium-card p-2.5 rounded-xl flex items-center justify-between text-xs">
+                                    <span class="text-gray-800 font-medium">Taj Lands End & Bandstand</span>
+                                    <span
+                                        class="text-[10px] font-bold text-[#0B1B3D] bg-[#0B1B3D]/10 px-2 py-0.5 rounded">5
+                                        Min</span>
+                                </div>
+                                <div class="premium-card p-2.5 rounded-xl flex items-center justify-between text-xs">
+                                    <span class="text-gray-800 font-medium">Bandra Promenade</span>
+                                    <span
+                                        class="text-[10px] font-bold text-[#0B1B3D] bg-[#0B1B3D]/10 px-2 py-0.5 rounded">1
+                                        Min</span>
+                                </div>
+                                <div class="premium-card p-2.5 rounded-xl flex items-center justify-between text-xs">
+                                    <span class="text-gray-800 font-medium">Jio World Drive (BKC)</span>
+                                    <span
+                                        class="text-[10px] font-bold text-[#0B1B3D] bg-[#0B1B3D]/10 px-2 py-0.5 rounded">12
+                                        Min</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Google Map Iframe -->
+                <div class="w-full lg:w-[52%]">
+                    <div class="relative group">
+                        <div
+                            class="absolute -top-4 -right-4 w-full h-full border-2 border-[#C5A059]/30 rounded-[2rem] z-0">
+                        </div>
+                        <div
+                            class="relative z-10 rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white bg-white">
+                            <iframe
+                                src="https://maps.google.com/maps?q=Bandra%20Reclamation%2C%20Bandra%20West%2C%20Mumbai&t=&z=14&ie=UTF8&iwloc=&output=embed"
+                                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade" class="w-full">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VIRTUAL TOUR SECTION -->
+    <section class="py-12 bg-[#FFF8DE]">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-2xl sm:text-3xl font-bold text-[#0B1B3D] mb-6 text-center">
+                Virtual Site Experience
+            </h2>
+            <div class="relative rounded-2xl overflow-hidden shadow-xl group cursor-pointer"
+                onclick="openPopup('Virtual Site Visit')">
+                <img alt="Virtual Site Experience"
+                    class="w-full h-64 sm:h-80 object-cover blur-[1px] transform group-hover:scale-105 transition duration-500 ease-in-out"
+                    src="assets/new images/tonino-lamborghini-living-room.webp" />
+                <div class="absolute inset-0 bg-black/40 flex flex-col items-center justify-center text-center p-4">
+                    <button
+                        class="flex items-center justify-center w-14 h-14 bg-white/90 rounded-full hover:bg-white transition mb-3 shadow-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-[#0B1B3D] ml-0.5"
+                            fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                d="M6.5 5.5A1 1 0 017.707 4.793l6 6a1 1 0 010 1.414l-6 6A1 1 0 016.5 16.5v-11z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                    <h3 class="text-xl sm:text-2xl font-bold text-white">Experience 360° Walkthrough</h3>
+                    <p class="text-white/80 text-xs mt-1">Tonino Lamborghini Residences &bull; Bandra Reclamation</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT DEVELOPER SECTION -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6 max-w-4xl text-center">
+            <h2 class="font-heading text-2xl md:text-3xl font-bold text-[#0B1B3D] mb-4">
+                About Tonino Lamborghini
+            </h2>
+            <div class="w-16 h-1 bg-[#C5A059] mx-auto mb-6"></div>
+            <p class="text-sm md:text-base text-gray-700 leading-relaxed mb-8 font-body">
+                Founded by Tonino Lamborghini, heir to the historic Lamborghini family, the brand represents an
+                uncompromising pursuit of design perfection, Italian craftsmanship, and luxury lifestyle. Spanning
+                five-star hotels, luxury branded residences, and bespoke industrial design across world capitals, Tonino
+                Lamborghini brings its bold architectural vision to Mumbai at Bandra Reclamation.
+            </p>
+            <div class="grid grid-cols-3 gap-4 max-w-2xl mx-auto">
+                <div class="p-3 bg-[#FFF8DE] rounded-xl border border-[#C5A059]/20">
+                    <div class="text-xl md:text-2xl font-bold text-[#0B1B3D]">40+</div>
+                    <p class="text-[11px] text-gray-600 uppercase font-semibold">Years of Legacy</p>
+                </div>
+                <div class="p-3 bg-[#FFF8DE] rounded-xl border border-[#C5A059]/20">
+                    <div class="text-xl md:text-2xl font-bold text-[#0B1B3D]">Global</div>
+                    <p class="text-[11px] text-gray-600 uppercase font-semibold">Branded Residences</p>
+                </div>
+                <div class="p-3 bg-[#FFF8DE] rounded-xl border border-[#C5A059]/20">
+                    <div class="text-xl md:text-2xl font-bold text-[#0B1B3D]">Italian</div>
+                    <p class="text-[11px] text-gray-600 uppercase font-semibold">Craftsmanship</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RERA COMPLIANCE BANNER -->
+    <section class="bg-[#FFF8DE] border-t border-[#C5A059]/20 py-8">
+        <div class="container mx-auto px-4 max-w-5xl">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+                <div class="flex items-center gap-4">
+                    <img src="assets/tonino-lamborghini-rera.svg" alt="MahaRERA QR"
+                        class="h-16 w-auto object-contain bg-white p-1 rounded shadow">
+                    <div class="text-xs text-gray-700 space-y-1">
+                        <p class="font-bold text-gray-900 uppercase">Project Registered Under MahaRERA</p>
+                        <p>Authorized Channel Partner MahaRERA Registration: <span
+                                class="font-bold text-[#0B1B3D]">A041272501874</span></p>
+                        <a href="https://maharera.mahaonline.gov.in" target="_blank" rel="noopener noreferrer"
+                            class="text-[#0B1B3D] hover:underline font-bold inline-flex items-center gap-1">
+                            maharera.mahaonline.gov.in <i data-lucide="external-link" class="w-3 h-3"></i>
+                        </a>
+                    </div>
+                </div>
+                <button onclick="openPopup('Check MahaRERA Details')"
+                    class="animated-gradient-button text-white text-xs font-bold px-6 py-2.5 rounded-full shadow whitespace-nowrap">
+                    Verify Project Details
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER (Dark Blue) -->
+    <footer class="bg-[#0B1B3D] text-white pt-14 pb-8 border-t-2 border-[#C5A059]">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10 border-b border-white/10 pb-10">
+                <!-- Brand Info -->
+                <div class="space-y-4">
+                    <img src="assets/tonino-lamborghini-logo-white.svg" alt="Tonino Lamborghini Residences"
+                        class="h-12 w-auto object-contain">
+                    <p class="text-white/80 text-xs leading-relaxed">
+                        Tonino Lamborghini Residences at Bandra Reclamation, Mumbai. A rare, iconic residential address
+                        offering uninterrupted Arabian Sea & Bandra-Worli Sea Link views.
+                    </p>
+                </div>
+
+                <!-- Navigation Links -->
+                <div>
+                    <h4 class="text-[#C5A059] font-bold uppercase tracking-wider text-xs mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-xs text-white/80">
+                        <li><a href="#hero" class="hover:text-[#C5A059] transition-colors">Home</a></li>
+                        <li><a href="#highlights" class="hover:text-[#C5A059] transition-colors">Project Highlights</a>
+                        </li>
+                        <li><a href="#pricing" class="hover:text-[#C5A059] transition-colors">Pricing &
+                                Configurations</a></li>
+                        <li><a href="#floor-plans" class="hover:text-[#C5A059] transition-colors">Floor Plans</a></li>
+                        <li><a href="#amenities" class="hover:text-[#C5A059] transition-colors">Luxury Amenities</a>
+                        </li>
+                        <li><a href="#location" class="hover:text-[#C5A059] transition-colors">Location &
+                                Connectivity</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-[#C5A059] font-bold uppercase tracking-wider text-xs mb-4">Reach Us</h4>
+                    <div class="space-y-3 text-xs text-white/80">
+                        <div class="flex items-start gap-2.5">
+                            <i data-lucide="map-pin" class="w-4 h-4 text-[#C5A059] flex-shrink-0 mt-0.5"></i>
+                            <span>Bandra Reclamation, Bandra West, Mumbai, Maharashtra 400050</span>
+                        </div>
+                        <div class="flex items-center gap-2.5">
+                            <i data-lucide="phone" class="w-4 h-4 text-[#C5A059]"></i>
+                            <a href="tel:+919920666656" class="hover:text-[#C5A059] transition-colors font-semibold">+91
+                                99206 66656</a>
+                        </div>
+                        <div class="flex items-center gap-2.5">
+                            <i data-lucide="message-circle" class="w-4 h-4 text-[#25D366]"></i>
+                            <a href="https://wa.me/919920666656" target="_blank" rel="noopener noreferrer"
+                                class="hover:text-[#25D366] transition-colors font-semibold">
+                                Chat on WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Disclaimer -->
+            <div class="text-[10px] text-white/60 leading-relaxed text-justify space-y-2 mb-6">
+                <p>
+                    <strong>Disclaimer:</strong> The information provided on this website is for informational purposes
+                    only and does not constitute an offer, contract, or guarantee of any service. This site is managed
+                    by an authorized channel partner (MahaRERA: A041272501874) for marketing purposes. All visuals,
+                    images, renderings, and floor plans are artist impressions and for representational purposes only.
+                    Specifications, dimensions, and prices are subject to change by the developer without prior notice.
+                </p>
+            </div>
+
+            <div
+                class="flex flex-col md:flex-row items-center justify-between text-[11px] text-white/70 border-t border-white/10 pt-4 gap-2">
+                <p>&copy; 2026 Tonino Lamborghini Residences Bandra. All rights reserved.</p>
+                <div class="flex gap-4">
+                    <a href="privacy.html" class="hover:text-[#C5A059]">Privacy Policy</a>
+                    <span>|</span>
+                    <a href="terms.html" class="hover:text-[#C5A059]">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- STICKY BOTTOM MOBILE BAR (Dark Blue) -->
+    <div class="fixed bottom-0 left-0 right-0 bg-[#0B1B3D] border-t border-[#C5A059]/40 p-3 z-40 md:hidden shadow-2xl">
+        <div class="flex space-x-3">
+            <a href="tel:+919920666656"
+                class="flex-1 bg-white text-[#0B1B3D] py-2.5 rounded-lg text-center font-bold text-xs flex items-center justify-center gap-2 shadow">
+                <i data-lucide="phone" class="w-4 h-4"></i>
+                <span>Call Now</span>
+            </a>
+            <a href="https://wa.me/919920666656" target="_blank" rel="noopener noreferrer"
+                class="flex-1 bg-[#25D366] text-white py-2.5 rounded-lg text-center font-bold text-xs flex items-center justify-center gap-2 shadow">
+                <i data-lucide="message-circle" class="w-4 h-4"></i>
+                <span>WhatsApp</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- STICKY WHATSAPP (Desktop Only) -->
+    <a href="https://wa.me/919920666656" target="_blank" rel="noopener noreferrer" aria-label="Connect on WhatsApp"
+        class="hidden lg:flex fixed bottom-6 right-6 z-40 bg-[#25D366] hover:bg-[#128C7E] text-white w-14 h-14 rounded-full shadow-2xl items-center justify-center transform hover:scale-110 transition duration-300">
+        <i data-lucide="message-circle" class="w-7 h-7"></i>
+    </a>
+
+    <!-- POPUP ENQUIRY MODAL -->
+    <div id="popupOverlay" class="hidden fixed inset-0 modal-backdrop flex items-center justify-center z-50 p-4">
+        <div class="bg-white rounded-3xl shadow-2xl w-full max-w-md relative p-6 border border-[#C5A059]/30">
+            <!-- Close Button -->
+            <button onclick="closePopup()"
+                class="absolute top-4 right-4 text-gray-500 hover:text-black text-2xl font-bold leading-none"
+                aria-label="Close modal">
+                &times;
+            </button>
+            <div class="text-center mt-2 mb-4">
+                <span class="text-[10px] uppercase tracking-widest text-[#C5A059] font-bold">Tonino Lamborghini
+                    Residences</span>
+                <h3 id="modalTitle" class="text-xl font-bold text-[#0B1B3D] mt-1">Pre-Register For Best Offers</h3>
+                <p class="text-xs text-gray-600 mt-1">Register now to receive cost sheet, brochures & floor plans</p>
+            </div>
+
+            <form action="sendmail.php" method="POST" class="space-y-3.5">
+                <input type="hidden" id="modalSource" name="source" value="Website Popup">
+                <div>
+                    <input type="text" name="name" placeholder="Full Name*" required
+                        class="w-full border border-gray-300 rounded-xl px-4 py-2.5 text-sm focus:border-[#C5A059] focus:outline-none">
+                </div>
+                <div>
+                    <input type="tel" name="phone" placeholder="Mobile Number*" required
+                        class="w-full border border-gray-300 rounded-xl px-4 py-2.5 text-sm focus:border-[#C5A059] focus:outline-none">
+                </div>
+                <div>
+                    <input type="email" name="email" placeholder="Email Address (Optional)"
+                        class="w-full border border-gray-300 rounded-xl px-4 py-2.5 text-sm focus:border-[#C5A059] focus:outline-none">
+                </div>
+                <button type="submit"
+                    class="w-full animated-gradient-button text-white font-bold py-3 rounded-xl uppercase tracking-wider text-xs shadow-lg">
+                    Submit Enquiry
+                </button>
+                <p class="text-center text-gray-400 text-[9px] uppercase tracking-wider">
+                    We respect your privacy &bull; Your details are safe with us
+                </p>
+            </form>
+
+            <div class="flex items-center my-3.5">
+                <hr class="flex-grow border-gray-200">
+                <span class="px-2 text-gray-400 text-xs">or connect directly</span>
+                <hr class="flex-grow border-gray-200">
+            </div>
+
+            <a href="https://wa.me/919920666656" target="_blank" rel="noopener noreferrer"
+                class="w-full flex items-center justify-center bg-[#25D366] hover:bg-[#128C7E] text-white py-2.5 rounded-xl font-semibold text-xs gap-2 transition">
+                <i data-lucide="message-circle" class="w-4 h-4"></i> Connect on WhatsApp
+            </a>
+        </div>
+    </div>
+
+    <!-- GALLERY LIGHTBOX MODAL -->
+    <div id="lightboxOverlay" class="hidden fixed inset-0 modal-backdrop z-50 flex items-center justify-center p-4"
+        onclick="handleLightboxBackdrop(event)">
+        <div class="relative max-w-5xl w-full flex flex-col items-center">
+            <!-- Close Button -->
+            <button onclick="closeLightbox()"
+                class="absolute -top-12 right-0 text-white hover:text-[#C5A059] text-3xl font-bold leading-none"
+                aria-label="Close Lightbox">
+                &times;
+            </button>
+            <div class="relative w-full flex items-center justify-center">
+                <!-- Prev Button -->
+                <button onclick="prevLightbox(event)"
+                    class="absolute left-2 md:-left-12 text-white hover:text-[#C5A059] p-2 bg-black/50 rounded-full"
+                    aria-label="Previous Image">
+                    <i data-lucide="chevron-left" class="w-6 h-6"></i>
+                </button>
+                <!-- Lightbox Image -->
+                <img id="lightboxImg" src="" alt="Gallery Image"
+                    class="lightbox-img rounded-2xl shadow-2xl max-h-[80vh] object-contain">
+                <!-- Next Button -->
+                <button onclick="nextLightbox(event)"
+                    class="absolute right-2 md:-right-12 text-white hover:text-[#C5A059] p-2 bg-black/50 rounded-full"
+                    aria-label="Next Image">
+                    <i data-lucide="chevron-right" class="w-6 h-6"></i>
+                </button>
+            </div>
+            <p id="lightboxCaption" class="text-white text-xs mt-3 font-semibold tracking-wider uppercase"></p>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        // 1. Initialize Lucide Icons
+        lucide.createIcons();
+
+        // 2. Mobile Menu Toggle
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuPath = document.getElementById('menu-path');
+        let menuOpen = false;
+
+        function toggleMenu() {
+            menuOpen = !menuOpen;
+            mobileMenu.classList.toggle('hidden');
+            if (menuOpen) {
+                menuPath.setAttribute('d', 'M6 18L18 6M6 6l12 12');
+            } else {
+                menuPath.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+            }
+        }
+        menuBtn.addEventListener('click', toggleMenu);
+
+        // Auto-close on click
+        mobileMenu.querySelectorAll('a, button').forEach(el => {
+            el.addEventListener('click', () => {
+                if (menuOpen) toggleMenu();
+            });
+        });
+
+        // 3. Enquiry Modal Logic
+        const popupOverlay = document.getElementById('popupOverlay');
+        const modalTitle = document.getElementById('modalTitle');
+        const modalSource = document.getElementById('modalSource');
+
+        function openPopup(title) {
+            if (title) {
+                modalTitle.innerText = title;
+                modalSource.value = title;
+            }
+            popupOverlay.classList.remove('hidden');
+        }
+
+        function closePopup() {
+            popupOverlay.classList.add('hidden');
+        }
+
+        popupOverlay.addEventListener('click', (e) => {
+            if (e.target === popupOverlay) closePopup();
+        });
+
+        // Auto-trigger modal after 8 seconds (if not already opened)
+        let autoPopupShown = false;
+        setTimeout(() => {
+            if (!autoPopupShown && popupOverlay.classList.contains('hidden')) {
+                autoPopupShown = true;
+                openPopup('Exclusive Pre-Launch Access');
+            }
+        }, 8000);
+
+        // 4. Hero Slider Logic
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.hero-slide');
+
+        function nextSlide() {
+            if (slides.length < 2) return;
+            slides[currentSlide].classList.remove('active');
+            slides[currentSlide].classList.add('exit');
+
+            const prevIndex = currentSlide;
+            currentSlide = (currentSlide + 1) % slides.length;
+
+            slides[currentSlide].classList.remove('exit');
+            slides[currentSlide].style.transition = 'none';
+            slides[currentSlide].style.transform = 'translateX(100%)';
+            slides[currentSlide].offsetHeight; // force reflow
+
+            slides[currentSlide].style.transition = '';
+            slides[currentSlide].style.transform = '';
+            slides[currentSlide].classList.add('active');
+
+            setTimeout(() => {
+                slides[prevIndex].classList.remove('exit');
+            }, 1200);
+        }
+        setInterval(nextSlide, 5000);
+
+        // 5. Gallery Lightbox Logic
+        const galleryData = [
+            { src: 'assets/new images/tonino-lamborghini-elevation.webp', caption: 'Architectural Elevation - Tonino Lamborghini Residences' },
+            { src: 'assets/new images/tonino-lamborghini-infinity-pool.webp', caption: 'Skyline Infinity Pool & Sunset Deck' },
+            { src: 'assets/new images/tonino-lamborghini-living-room.webp', caption: 'Palatial Living Room with Arabian Sea Horizon' },
+            { src: 'assets/new images/tonino-lamborghini-master-suite.webp', caption: 'Master Bedroom Suite with Private Balcony' },
+            { src: 'assets/new images/tonino-lamborghini-grand-lobby.webp', caption: 'Grand Double-Height Onyx Concierge Lobby' },
+            { src: 'assets/new images/tonino-lamborghini-sealink-sunset.webp', caption: 'Bandra-Worli Sea Link Dusk Panorama' }
+        ];
+
+        let currentLightboxIndex = 0;
+        const lightboxOverlay = document.getElementById('lightboxOverlay');
+        const lightboxImg = document.getElementById('lightboxImg');
+        const lightboxCaption = document.getElementById('lightboxCaption');
+
+        function openLightbox(index) {
+            currentLightboxIndex = index;
+            updateLightboxContent();
+            lightboxOverlay.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            lightboxOverlay.classList.add('hidden');
+            document.body.style.overflow = '';
+        }
+
+        function updateLightboxContent() {
+            lightboxImg.src = galleryData[currentLightboxIndex].src;
+            lightboxCaption.innerText = galleryData[currentLightboxIndex].caption;
+        }
+
+        function prevLightbox(e) {
+            if (e) e.stopPropagation();
+            currentLightboxIndex = (currentLightboxIndex - 1 + galleryData.length) % galleryData.length;
+            updateLightboxContent();
+        }
+
+        function nextLightbox(e) {
+            if (e) e.stopPropagation();
+            currentLightboxIndex = (currentLightboxIndex + 1) % galleryData.length;
+            updateLightboxContent();
+        }
+
+        function handleLightboxBackdrop(e) {
+            if (e.target === lightboxOverlay) closeLightbox();
+        }
+
+        document.addEventListener('keydown', (e) => {
+            if (!lightboxOverlay.classList.contains('hidden')) {
+                if (e.key === 'Escape') closeLightbox();
+                if (e.key === 'ArrowLeft') prevLightbox();
+                if (e.key === 'ArrowRight') nextLightbox();
+            }
+            if (e.key === 'Escape' && !popupOverlay.classList.contains('hidden')) {
+                closePopup();
+            }
+        });
+    </script>
+</body>
+
+</html>
