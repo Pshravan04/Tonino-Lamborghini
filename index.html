@@ -81,10 +81,25 @@
             --color-secondary: #F8F9FA;
         }
 
+        html {
+            overflow-x: hidden;
+            max-width: 100%;
+        }
+
         body {
             font-family: 'Jost', sans-serif;
             background-color: #FFF8DE;
             color: #1a1a1a;
+            overflow-x: hidden;
+            max-width: 100%;
+            position: relative;
+            padding-bottom: 60px; /* Space for mobile sticky bottom bar */
+        }
+
+        @media (min-width: 768px) {
+            body {
+                padding-bottom: 0;
+            }
         }
 
         h1,
@@ -121,20 +136,35 @@
             z-index: 2;
         }
 
-        /* Smooth transitions */
-        * {
+        /* Targeted smooth transitions (prevents mobile layout thrashing) */
+        a, button, input, select, textarea, .card-hover, .premium-card {
             transition: all 0.3s ease;
         }
 
-        /* Modal backdrop */
+        /* Modal backdrop & scrollbar */
         .modal-backdrop {
             background: rgba(0, 0, 0, 0.75);
             backdrop-filter: blur(6px);
+            -webkit-backdrop-filter: blur(6px);
+        }
+
+        .modal-scroll::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        .modal-scroll::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+
+        .modal-scroll::-webkit-scrollbar-thumb {
+            background: #C5A059;
+            border-radius: 10px;
         }
 
         /* Gallery lightbox */
         .lightbox-img {
-            max-height: 82vh;
+            max-height: 80vh;
             object-fit: contain;
         }
 
@@ -159,7 +189,7 @@
             transform: translateY(0);
         }
 
-        @keyframes gradientMove {
+        @keyframes gradientMove { 
             0% {
                 background-position: 0% 50%;
             }
@@ -284,12 +314,12 @@
     <nav id="navbar"
         class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-[#0B1B3D] border-b border-black/15 shadow-md">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-20">
+            <div class="flex justify-between items-center h-16 sm:h-20">
                 <!-- Logo -->
                 <div class="flex-shrink-0">
                     <a href="#hero" class="flex items-center">
                         <img src="assets/tonino-lamborghini-logo-white.svg" alt="Tonino Lamborghini Residences Logo"
-                            class="h-14 w-auto object-contain" />
+                            class="h-10 sm:h-14 w-auto object-contain" />
                     </a>
                 </div>
 
@@ -352,10 +382,10 @@
     </nav>
 
     <!-- HERO SECTION -->
-    <section id="hero" class="relative bg-[#FFF8DE] min-h-screen lg:h-screen w-full flex flex-col lg:block pt-[80px]">
+    <section id="hero" class="relative bg-[#FFF8DE] min-h-screen lg:h-screen w-full flex flex-col lg:block pt-16 sm:pt-20">
         <!-- Hero Background Slider -->
         <div
-            class="relative w-full aspect-square md:aspect-video lg:aspect-auto lg:absolute lg:inset-0 lg:h-full overflow-hidden flex-shrink-0">
+            class="relative w-full aspect-[4/3] sm:aspect-video lg:aspect-auto lg:absolute lg:inset-0 lg:h-full overflow-hidden flex-shrink-0">
             <!-- Slide 1 -->
             <div class="hero-slide active">
                 <picture class="w-full h-full">
@@ -379,7 +409,7 @@
 
         <!-- Project Info Card (Floating Left on Desktop) -->
         <div
-            class="relative lg:absolute lg:bottom-32 lg:left-8 xl:left-20 w-[95%] lg:w-[90%] max-w-sm lg:max-w-[420px] z-20 mx-auto mt-4 lg:mt-0">
+            class="relative lg:absolute lg:bottom-28 xl:bottom-32 lg:left-8 xl:left-20 w-[95%] sm:w-[90%] max-w-sm lg:max-w-[420px] z-20 mx-auto -mt-8 sm:-mt-12 lg:mt-0">
             <div
                 class="premium-card p-5 lg:p-6 rounded-[2rem] shadow-2xl space-y-3.5 text-center bg-white/95 border border-[#C5A059]/30">
                 <div class="space-y-1">
@@ -502,7 +532,7 @@
     </section>
 
     <!-- HIGHLIGHTS SECTION -->
-    <section id="highlights" class="pt-28 lg:pt-36 pb-16 bg-[#FFF8DE]">
+    <section id="highlights" class="pt-8 sm:pt-12 lg:pt-36 pb-16 bg-[#FFF8DE]">
         <div class="container mx-auto px-4">
             <div class="text-center mb-12">
                 <span
@@ -613,7 +643,7 @@
                 <!-- Image with Offset Gold Frame -->
                 <div class="w-full lg:w-3/5 relative group">
                     <div
-                        class="absolute -inset-4 border-2 border-[#C5A059]/30 rounded-3xl translate-x-4 translate-y-4 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform duration-500">
+                        class="hidden sm:block absolute -inset-4 border-2 border-[#C5A059]/30 rounded-3xl translate-x-4 translate-y-4 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform duration-500">
                     </div>
                     <div class="relative overflow-hidden rounded-3xl shadow-2xl">
                         <img src="assets/new images/tonino-lamborghini-elevation.webp"
@@ -686,7 +716,7 @@
             <div class="max-w-4xl mx-auto">
                 <div class="relative group">
                     <div
-                        class="absolute -inset-4 border-2 border-[#C5A059]/30 rounded-[2.5rem] translate-x-3 translate-y-3">
+                        class="hidden sm:block absolute -inset-4 border-2 border-[#C5A059]/30 rounded-[2.5rem] translate-x-3 translate-y-3">
                     </div>
                     <div class="premium-card p-4 rounded-[2rem] overflow-hidden shadow-2xl relative bg-white">
                         <div class="aspect-[16/9] bg-gray-100 relative group overflow-hidden rounded-2xl">
@@ -725,15 +755,15 @@
                 </p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 max-w-6xl mx-auto">
                 <!-- 3 BHK Card -->
                 <div
-                    class="bg-[#FFF8DE]/60 border border-[#C5A059]/30 rounded-[2rem] p-7 space-y-5 hover:shadow-2xl transition-all flex flex-col justify-between">
+                    class="bg-[#FFF8DE]/60 border border-[#C5A059]/30 rounded-[2rem] p-5 sm:p-7 space-y-5 hover:shadow-2xl transition-all flex flex-col justify-between">
                     <div>
-                        <div class="flex items-center justify-between border-b border-[#C5A059]/20 pb-3 mb-4">
+                        <div class="flex flex-wrap items-center justify-between gap-2 border-b border-[#C5A059]/20 pb-3 mb-4">
                             <h3 class="text-xl font-bold text-[#0B1B3D]">3 BHK Luxury</h3>
                             <span
-                                class="text-[10px] font-bold bg-[#0B1B3D] text-white px-2.5 py-1 rounded-full uppercase">Sea
+                                class="text-[10px] font-bold bg-[#0B1B3D] text-white px-2.5 py-1 rounded-full uppercase whitespace-nowrap">Sea
                                 View</span>
                         </div>
                         <div class="space-y-3">
@@ -759,16 +789,16 @@
 
                 <!-- 4 BHK Card (Featured) -->
                 <div
-                    class="bg-[#FFF8DE] border-2 border-[#C5A059] rounded-[2rem] p-7 space-y-5 shadow-xl hover:shadow-2xl transition-all flex flex-col justify-between relative transform lg:-translate-y-2">
+                    class="bg-[#FFF8DE] border-2 border-[#C5A059] rounded-[2rem] p-5 sm:p-7 space-y-5 shadow-xl hover:shadow-2xl transition-all flex flex-col justify-between relative transform lg:-translate-y-2">
                     <div
                         class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-[#C5A059] text-white text-[10px] font-bold uppercase tracking-widest px-4 py-1 rounded-full shadow">
                         Most Preferred
                     </div>
                     <div>
-                        <div class="flex items-center justify-between border-b border-[#C5A059]/20 pb-3 mb-4 mt-1">
+                        <div class="flex flex-wrap items-center justify-between gap-2 border-b border-[#C5A059]/20 pb-3 mb-4 mt-1">
                             <h3 class="text-xl font-bold text-[#0B1B3D]">4 BHK Palatial</h3>
                             <span
-                                class="text-[10px] font-bold bg-[#0B1B3D] text-white px-2.5 py-1 rounded-full uppercase">Panoramic
+                                class="text-[10px] font-bold bg-[#0B1B3D] text-white px-2.5 py-1 rounded-full uppercase whitespace-nowrap">Panoramic
                                 View</span>
                         </div>
                         <div class="space-y-3">
@@ -794,12 +824,12 @@
 
                 <!-- Penthouse / Duplex Card -->
                 <div
-                    class="bg-[#FFF8DE]/60 border border-[#C5A059]/30 rounded-[2rem] p-7 space-y-5 hover:shadow-2xl transition-all flex flex-col justify-between">
+                    class="bg-[#FFF8DE]/60 border border-[#C5A059]/30 rounded-[2rem] p-5 sm:p-7 space-y-5 hover:shadow-2xl transition-all flex flex-col justify-between">
                     <div>
-                        <div class="flex items-center justify-between border-b border-[#C5A059]/20 pb-3 mb-4">
+                        <div class="flex flex-wrap items-center justify-between gap-2 border-b border-[#C5A059]/20 pb-3 mb-4">
                             <h3 class="text-xl font-bold text-[#0B1B3D]">Penthouse Suites</h3>
                             <span
-                                class="text-[10px] font-bold bg-[#0B1B3D] text-white px-2.5 py-1 rounded-full uppercase">Signature</span>
+                                class="text-[10px] font-bold bg-[#0B1B3D] text-white px-2.5 py-1 rounded-full uppercase whitespace-nowrap">Signature</span>
                         </div>
                         <div class="space-y-3">
                             <div class="flex justify-between text-sm">
@@ -1043,7 +1073,7 @@
 
             <!-- Additional Amenities Grid -->
             <div
-                class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 pt-8 border-t border-gray-200 max-w-6xl mx-auto">
+                class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4 sm:gap-6 pt-8 border-t border-gray-200 max-w-6xl mx-auto">
                 <div class="flex flex-col items-center text-center group">
                     <div
                         class="w-12 h-12 bg-[#FFF8DE] rounded-full flex items-center justify-center mb-2 group-hover:bg-[#0B1B3D] group-hover:text-white transition-colors">
@@ -1334,14 +1364,14 @@
                 <div class="w-full lg:w-[52%]">
                     <div class="relative group">
                         <div
-                            class="absolute -top-4 -right-4 w-full h-full border-2 border-[#C5A059]/30 rounded-[2rem] z-0">
+                            class="hidden sm:block absolute -top-4 -right-4 w-full h-full border-2 border-[#C5A059]/30 rounded-[2rem] z-0">
                         </div>
                         <div
                             class="relative z-10 rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white bg-white">
                             <iframe
                                 src="https://maps.google.com/maps?q=Bandra%20Reclamation%2C%20Bandra%20West%2C%20Mumbai&t=&z=14&ie=UTF8&iwloc=&output=embed"
                                 width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade" class="w-full">
+                                referrerpolicy="no-referrer-when-downgrade" class="w-full h-[320px] sm:h-[400px] lg:h-[450px]">
                             </iframe>
                         </div>
                     </div>
@@ -1434,7 +1464,7 @@
     </section>
 
     <!-- FOOTER (Dark Blue) -->
-    <footer class="bg-[#0B1B3D] text-white pt-14 pb-8 border-t-2 border-[#C5A059]">
+    <footer class="bg-[#0B1B3D] text-white pt-14 pb-20 md:pb-8 border-t-2 border-[#C5A059]">
         <div class="container mx-auto px-4 max-w-6xl">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10 border-b border-white/10 pb-10">
                 <!-- Brand Info -->
@@ -1534,15 +1564,15 @@
     </a>
 
     <!-- POPUP ENQUIRY MODAL -->
-    <div id="popupOverlay" class="hidden fixed inset-0 modal-backdrop flex items-center justify-center z-50 p-4">
-        <div class="bg-white rounded-3xl shadow-2xl w-full max-w-md relative p-6 border border-[#C5A059]/30">
+    <div id="popupOverlay" class="hidden fixed inset-0 modal-backdrop flex items-center justify-center z-50 p-3 sm:p-4">
+        <div class="bg-white rounded-3xl shadow-2xl w-full max-w-md relative p-5 sm:p-6 border border-[#C5A059]/30 max-h-[90vh] overflow-y-auto modal-scroll">
             <!-- Close Button -->
             <button onclick="closePopup()"
-                class="absolute top-4 right-4 text-gray-500 hover:text-black text-2xl font-bold leading-none"
+                class="absolute top-3 right-3 sm:top-4 sm:right-4 text-gray-500 hover:text-black text-2xl font-bold leading-none w-9 h-9 flex items-center justify-center rounded-full hover:bg-gray-100 transition-colors"
                 aria-label="Close modal">
                 &times;
             </button>
-            <div class="text-center mt-2 mb-4">
+            <div class="text-center mt-1 sm:mt-2 mb-4">
                 <span class="text-[10px] uppercase tracking-widest text-[#C5A059] font-bold">Tonino Lamborghini
                     Residences</span>
                 <h3 id="modalTitle" class="text-xl font-bold text-[#0B1B3D] mt-1">Pre-Register For Best Offers</h3>
@@ -1571,27 +1601,16 @@
                     We respect your privacy &bull; Your details are safe with us
                 </p>
             </form>
-
-            <div class="flex items-center my-3.5">
-                <hr class="flex-grow border-gray-200">
-                <span class="px-2 text-gray-400 text-xs">or connect directly</span>
-                <hr class="flex-grow border-gray-200">
-            </div>
-
-            <a href="https://wa.me/919920666656" target="_blank" rel="noopener noreferrer"
-                class="w-full flex items-center justify-center bg-[#25D366] hover:bg-[#128C7E] text-white py-2.5 rounded-xl font-semibold text-xs gap-2 transition">
-                <i data-lucide="message-circle" class="w-4 h-4"></i> Connect on WhatsApp
-            </a>
         </div>
     </div>
 
     <!-- GALLERY LIGHTBOX MODAL -->
-    <div id="lightboxOverlay" class="hidden fixed inset-0 modal-backdrop z-50 flex items-center justify-center p-4"
+    <div id="lightboxOverlay" class="hidden fixed inset-0 modal-backdrop z-50 flex items-center justify-center p-3 sm:p-4"
         onclick="handleLightboxBackdrop(event)">
         <div class="relative max-w-5xl w-full flex flex-col items-center">
             <!-- Close Button -->
             <button onclick="closeLightbox()"
-                class="absolute -top-12 right-0 text-white hover:text-[#C5A059] text-3xl font-bold leading-none"
+                class="absolute -top-10 sm:-top-12 right-0 text-white hover:text-[#C5A059] text-2xl sm:text-3xl font-bold leading-none bg-black/50 sm:bg-transparent rounded-full px-3 py-1"
                 aria-label="Close Lightbox">
                 &times;
             </button>
